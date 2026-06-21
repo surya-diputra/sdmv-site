@@ -1,0 +1,485 @@
+```html
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SDMV - Ride Dash, GPS Recorder & Drag Timer</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        app: {
+                            darkBg: '#0B0808',      // Deep warm black from screenshot
+                            cardBg: '#161111',      // Dark card color
+                            cardBorder: '#231A1A',  // Card borders
+                            redAccent: '#8B1E1E',   // Crimson red accent
+                            redAccentHover: '#A32424',
+                            textGray: '#8E8282',    // Muted text
+                            btnDark: '#262020'      // Dark reset button
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Icons and Fonts -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
+    
+    <style>
+        body {
+            font-family: 'Plus Jakarta Sans', sans-serif;
+        }
+        /* Exact branding outline effect for SDMV logo */
+        .sdmv-logo-text {
+            font-style: italic;
+            font-weight: 900;
+            color: #FFFFFF;
+            text-shadow: 
+                -1.5px -1.5px 0 #8B1E1E,  
+                 1.5px -1.5px 0 #8B1E1E,
+                -1.5px  1.5px 0 #8B1E1E,
+                 1.5px  1.5px 0 #8B1E1E,
+                 0px 0px 8px rgba(139, 30, 30, 0.4);
+        }
+    </style>
+</head>
+<body class="bg-app-darkBg text-gray-100 antialiased selection:bg-app-redAccent selection:text-white">
+
+    <!-- Simple Navigation Header -->
+    <header class="border-b border-app-cardBorder bg-app-darkBg/95 backdrop-blur sticky top-0 z-50">
+        <div class="max-w-6xl mx-auto px-4 h-16 flex items-center justify-between">
+            <div class="flex items-center gap-2">
+                <span class="sdmv-logo-text text-2xl tracking-tighter">SDMV</span>
+            </div>
+            <div class="flex items-center gap-6">
+                <a href="#privacy" class="text-xs text-app-textGray hover:text-white transition">Privacy Policy</a>
+                <a href="https://play.google.com/store/apps/details?id=com.sdmv.qjnavigation" target="_blank" class="px-4 py-2 text-xs font-bold rounded-lg bg-app-redAccent hover:bg-app-redAccentHover text-white transition flex items-center gap-2">
+                    <i class="fa-brands fa-google-play"></i> Get on Google Play
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <section class="max-w-6xl mx-auto px-4 py-12 md:py-20 grid lg:grid-cols-12 gap-12 items-center">
+        
+        <!-- App Description (Direct Match to Play Store Store Listing) -->
+        <div class="lg:col-span-6 space-y-6 text-center lg:text-left">
+            <h1 class="text-4xl md:text-5xl font-extrabold tracking-tight text-white leading-tight">
+                Your Motorcycle <br>
+                <span class="text-app-redAccent">Ride Dashboard</span>
+            </h1>
+            <p class="text-app-textGray text-base md:text-lg leading-relaxed max-w-xl mx-auto lg:mx-0">
+                A simple and functional companion for your motorcycle rides. Monitor GPS speed via a responsive speedometer dial, record ride statistics like distance and average speed, and test your motorcycle's acceleration timings with a built-in GPS Drag Timer.
+            </p>
+            
+            <div class="space-y-4 pt-2 text-left max-w-md mx-auto lg:mx-0">
+                <div class="flex items-start gap-3">
+                    <div class="w-5 h-5 rounded-full bg-app-redAccent/20 flex items-center justify-center text-app-redAccent shrink-0 mt-0.5">
+                        <i class="fa-solid fa-check text-[10px]"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-white">Ride Dash</h3>
+                        <p class="text-xs text-app-textGray">Real-time speedometer showing current speed in km/h.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-5 h-5 rounded-full bg-app-redAccent/20 flex items-center justify-center text-app-redAccent shrink-0 mt-0.5">
+                        <i class="fa-solid fa-check text-[10px]"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-white">Ride Recorder</h3>
+                        <p class="text-xs text-app-textGray">Tracks duration, elapsed riding distance, and average speed using GPS.</p>
+                    </div>
+                </div>
+                <div class="flex items-start gap-3">
+                    <div class="w-5 h-5 rounded-full bg-app-redAccent/20 flex items-center justify-center text-app-redAccent shrink-0 mt-0.5">
+                        <i class="fa-solid fa-check text-[10px]"></i>
+                    </div>
+                    <div>
+                        <h3 class="text-sm font-bold text-white">Drag Timer</h3>
+                        <p class="text-xs text-app-textGray">Automated tracking to measure 0-60 km/h, 0-100 km/h, and 201m acceleration times.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="pt-4 flex justify-center lg:justify-start">
+                <a href="https://play.google.com/store/apps/details?id=com.sdmv.qjnavigation" target="_blank" class="inline-flex items-center gap-3 bg-app-redAccent hover:bg-app-redAccentHover px-6 py-3.5 rounded-xl font-bold transition">
+                    <i class="fa-brands fa-google-play text-lg"></i>
+                    Download on Google Play
+                </a>
+            </div>
+        </div>
+
+        <!-- High-Fidelity App UI Replica (Matches Screenshot Exactly) -->
+        <div class="lg:col-span-6 flex justify-center">
+            <div class="w-full max-w-[360px] bg-[#090606] rounded-[40px] p-3 border-4 border-[#231A1A] shadow-2xl relative overflow-hidden">
+                
+                <!-- Inner Screen Content -->
+                <div class="bg-app-darkBg rounded-[32px] overflow-hidden px-4 pt-6 pb-4 flex flex-col min-h-[580px] select-none text-white">
+                    
+                    <!-- Status Header -->
+                    <div class="flex justify-between items-center text-[11px] font-semibold text-gray-400 px-2 mb-3">
+                        <span id="live-clock">8:54</span>
+                        <div class="flex gap-2 items-center">
+                            <i class="fa-solid fa-location-arrow text-blue-400 text-[9px]"></i>
+                            <i class="fa-solid fa-signal"></i>
+                            <i class="fa-solid fa-battery-three-quarters"></i>
+                            <span class="text-[9px]">42</span>
+                        </div>
+                    </div>
+
+                    <!-- Layout Selector Tabs -->
+                    <div class="grid grid-cols-3 gap-1 bg-app-cardBg p-1 rounded-xl border border-app-cardBorder text-[10px] font-bold text-center tracking-wide mb-3">
+                        <div class="py-2 bg-app-redAccent text-white rounded-lg font-bold uppercase">Ride Dash</div>
+                        <div class="py-2 text-app-textGray font-bold uppercase">History</div>
+                        <div class="py-2 text-app-textGray font-bold uppercase">System Link</div>
+                    </div>
+
+                    <!-- Section 1: Dashboard with SDMV branding & Speedometer Arc -->
+                    <div class="bg-app-cardBg p-4 rounded-2xl border border-app-cardBorder flex flex-col items-center justify-center mb-3">
+                        <span class="sdmv-logo-text text-2xl mb-3">SDMV</span>
+                        
+                        <!-- Arc Speed Dial -->
+                        <div class="relative w-36 h-28 flex flex-col justify-center items-center">
+                            <svg viewBox="0 0 100 80" class="absolute inset-0 w-full h-full transform -rotate-12">
+                                <path d="M 15 70 A 40 40 0 1 1 85 70" fill="none" stroke="#231A1A" stroke-width="7" stroke-dasharray="1 3" stroke-linecap="round"/>
+                                <path id="speedo-active-track" d="M 15 70 A 40 40 0 1 1 85 70" fill="none" stroke="#8B1E1E" stroke-width="7" stroke-dasharray="1 3" stroke-dashoffset="220" stroke-linecap="round" class="transition-all duration-300"/>
+                            </svg>
+                            <div class="text-center mt-3">
+                                <span class="text-[9px] uppercase tracking-widest text-app-textGray block">Speed</span>
+                                <span id="dash-speed-val" class="text-4xl font-extrabold tracking-tighter block font-mono">0</span>
+                                <span class="text-[9px] text-app-textGray font-mono block">km/h</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Section 2: Ride Recorder Card (GPS) -->
+                    <div class="bg-app-cardBg p-4 rounded-2xl border border-app-cardBorder space-y-3 mb-3 text-center">
+                        <div class="text-[10px] font-bold uppercase tracking-wider text-left text-gray-200">
+                            Ride Recorder (GPS)
+                        </div>
+                        <div>
+                            <span class="text-[8px] uppercase tracking-widest text-app-textGray block">Duration</span>
+                            <span id="duration-timer" class="text-2xl font-bold font-mono tracking-wide text-white">00:00:00</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-1 border-t border-app-cardBorder/60 pt-2 text-center">
+                            <div>
+                                <span class="text-[8px] uppercase tracking-widest text-app-textGray block">Distance</span>
+                                <span id="distance-counter" class="text-base font-bold font-mono">0.00 km</span>
+                            </div>
+                            <div class="border-l border-app-cardBorder/60">
+                                <span class="text-[8px] uppercase tracking-widest text-app-textGray block">Avg Speed</span>
+                                <span id="avg-speed-counter" class="text-base font-bold font-mono">0.0 km/h</span>
+                            </div>
+                        </div>
+                        <button id="btn-ride" onclick="handleRideSimulation()" class="w-full py-2.5 rounded-xl bg-app-redAccent hover:bg-app-redAccentHover font-bold text-xs tracking-wide transition">
+                            Start Ride
+                        </button>
+                    </div>
+
+                    <!-- Section 3: Drag Timer Card (GPS) -->
+                    <div class="bg-app-cardBg p-4 rounded-2xl border border-app-cardBorder space-y-2">
+                        <div class="text-[10px] font-bold uppercase tracking-wider text-gray-200">
+                            Drag Timer (GPS)
+                        </div>
+                        <div id="drag-status" class="text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-widest">
+                            READY
+                        </div>
+                        <div class="grid grid-cols-4 gap-1 text-center py-2 border-y border-app-cardBorder/40">
+                            <div>
+                                <span class="text-[8px] uppercase text-app-textGray block">0-60</span>
+                                <span id="drag-t1" class="text-xs font-bold font-mono">--</span>
+                            </div>
+                            <div class="border-l border-app-cardBorder/60">
+                                <span class="text-[8px] uppercase text-app-textGray block">0-100</span>
+                                <span id="drag-t2" class="text-xs font-bold font-mono">--</span>
+                            </div>
+                            <div class="border-l border-app-cardBorder/60">
+                                <span class="text-[8px] uppercase text-app-textGray block">201m</span>
+                                <span id="drag-t3" class="text-xs font-bold font-mono">--</span>
+                            </div>
+                            <div class="border-l border-app-cardBorder/60">
+                                <span class="text-[8px] uppercase text-app-textGray block">Max km/h</span>
+                                <span id="drag-max-val" class="text-xs font-bold font-mono">0</span>
+                            </div>
+                        </div>
+                        <div class="text-center text-[9px] text-app-textGray font-mono">
+                            GPS speed: <span id="drag-live-gps">0 km/h</span>
+                        </div>
+                        <div class="grid grid-cols-2 gap-2 pt-1">
+                            <button id="btn-drag" onclick="handleDragSimulation()" class="py-2.5 rounded-xl bg-app-redAccent hover:bg-app-redAccentHover font-bold text-[10px] uppercase tracking-wider transition">
+                                Arm
+                            </button>
+                            <button onclick="handleDragReset()" class="py-2.5 rounded-xl bg-app-btnDark hover:bg-zinc-800 font-bold text-[10px] uppercase tracking-wider transition">
+                                Reset
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Essential Privacy Policy & Contact Details (Required for Store Verification) -->
+    <section id="privacy" class="max-w-4xl mx-auto px-4 py-16 border-t border-app-cardBorder">
+        <div class="prose prose-invert max-w-none text-app-textGray text-xs space-y-6">
+            <h2 class="text-xl font-bold text-white border-b border-app-cardBorder pb-2">Privacy Policy</h2>
+            <p class="text-[10px] font-mono">Last Updated: June 21, 2026</p>
+            
+            <p>
+                At SDMV, we are fully committed to protecting your security. This Privacy Policy details the processes, permissions, and data safety practices of the <strong>SDMV</strong> mobile application.
+            </p>
+
+            <h3 class="text-sm font-bold text-white">1. Core App Permissions</h3>
+            <p>
+                Because SDMV acts as a local telemetry gauge, specific permissions are required strictly to perform on-device updates. None of this data is collected, stored, or sent to remote servers:
+            </p>
+            <ul class="list-disc pl-5 space-y-1">
+                <li><strong>Location Information (GPS):</strong> Necessary to calculate vehicle speeds, duration logs, and drag timer metrics.</li>
+                <li><strong>Foreground Services:</strong> Used to maintain calculations if the phone is placed in a pocket during active riding.</li>
+            </ul>
+
+            <h3 class="text-sm font-bold text-white">2. Advertisements (Google AdMob)</h3>
+            <p>
+                This app displays ads managed by Google AdMob. AdMob uses unique advertising identifiers (such as the device's Google Advertising ID) to deliver relevant promotions. No identifiable personal profiles are compiled.
+            </p>
+
+            <h3 class="text-sm font-bold text-white">3. Information Storage and Deletion</h3>
+            <p>
+                Because SDMV does not use remote databases to store your riding records, all configurations and data logs can be instantly wiped by selecting "Clear Data" under Android operating system settings, or by simply uninstalling the app.
+            </p>
+
+            <p class="pt-4 border-t border-app-cardBorder text-[11px]">
+                For questions regarding the application, please contact support directly at: <a href="mailto:support@sdmv.site" class="text-app-redAccent hover:underline font-semibold">support@sdmv.site</a>.
+            </p>
+        </div>
+    </section>
+
+    <!-- Simple Footer with app-ads.txt link -->
+    <footer class="border-t border-app-cardBorder bg-app-darkBg text-app-textGray text-xs py-8">
+        <div class="max-w-6xl mx-auto px-4 flex flex-col sm:flex-row items-center justify-between gap-4 text-center sm:text-left">
+            <span>© 2026 SDMV. All rights reserved.</span>
+            <div class="flex gap-6">
+                <a href="#privacy" class="hover:text-white transition">Privacy Policy</a>
+                <a href="/app-ads.txt" class="text-app-redAccent font-bold hover:underline font-mono">app-ads.txt</a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Interactive Engine -->
+    <script>
+        // Clock
+        function updateClock() {
+            const clock = document.getElementById('live-clock');
+            if (clock) {
+                const now = new Date();
+                let hours = now.getHours();
+                let minutes = now.getMinutes();
+                minutes = minutes < 10 ? '0' + minutes : minutes;
+                clock.innerText = `${hours}:${minutes}`;
+            }
+        }
+        setInterval(updateClock, 1000);
+        updateClock();
+
+        // Speed state variables
+        let speed = 0;
+        let passiveTimer = null;
+
+        // Ride Recorder Variables
+        let isRecording = false;
+        let recStartTime = 0;
+        let recInterval = null;
+        let elapsedDistance = 0.0;
+
+        // Drag Timer Variables
+        let dragArmed = false;
+        let dragRunning = false;
+        let dragStart = 0;
+        let dragInterval = null;
+        let maxRecordedSpeed = 0;
+        let t60 = null;
+        let t100 = null;
+
+        const activeTrack = document.getElementById('speedo-active-track');
+        const speedValDisplay = document.getElementById('dash-speed-val');
+        const liveGpsDisplay = document.getElementById('drag-live-gps');
+
+        function setDisplaySpeed(s) {
+            speed = s;
+            if (speedValDisplay) speedValDisplay.innerText = Math.round(s);
+            if (liveGpsDisplay) liveGpsDisplay.innerText = `${Math.round(s)} km/h`;
+
+            // Adjust Speedometer SVG dash offset (max outline length is ~220)
+            const percentage = Math.min(s / 120, 1);
+            const offset = 220 - (percentage * 220);
+            if (activeTrack) activeTrack.style.strokeDashoffset = offset;
+        }
+
+        // Slight idle fluctuation when speed is 0
+        function startPassiveMockSpeed() {
+            passiveTimer = setInterval(() => {
+                if (!dragRunning && !isRecording) {
+                    setDisplaySpeed(Math.max(0, Math.sin(Date.now() / 3000) * 1.5));
+                }
+            }, 100);
+        }
+        startPassiveMockSpeed();
+
+        // Simulation: Ride Recorder Tracker
+        function handleRideSimulation() {
+            const btn = document.getElementById('btn-ride');
+            const timer = document.getElementById('duration-timer');
+            const dist = document.getElementById('distance-counter');
+            const avg = document.getElementById('avg-speed-counter');
+
+            if (!isRecording) {
+                isRecording = true;
+                btn.innerText = "Stop Ride";
+                btn.className = "w-full py-2.5 rounded-xl bg-zinc-800 hover:bg-zinc-700 font-bold text-xs tracking-wide transition border border-app-cardBorder";
+                recStartTime = Date.now();
+                elapsedDistance = 0;
+
+                recInterval = setInterval(() => {
+                    const elapsed = Date.now() - recStartTime;
+                    const hrs = Math.floor(elapsed / 3600000);
+                    const mins = Math.floor((elapsed % 3600000) / 60000);
+                    const secs = Math.floor((elapsed % 60000) / 1000);
+                    const pad = (n) => String(n).padStart(2, '0');
+                    timer.innerText = `${pad(hrs)}:${pad(mins)}:${pad(secs)}`;
+
+                    // Simulate typical riding speeds
+                    let simulatedRideSpeed = 65 + Math.sin(elapsed / 3000) * 10;
+                    setDisplaySpeed(simulatedRideSpeed);
+
+                    elapsedDistance += (simulatedRideSpeed / 3600);
+                    dist.innerText = `${elapsedDistance.toFixed(2)} km`;
+
+                    const averageVal = elapsedDistance / (elapsed / 3600000);
+                    avg.innerText = `${averageVal.toFixed(1)} km/h`;
+                }, 1000);
+            } else {
+                isRecording = false;
+                btn.innerText = "Start Ride";
+                btn.className = "w-full py-2.5 rounded-xl bg-app-redAccent hover:bg-app-redAccentHover font-bold text-xs tracking-wide transition";
+                clearInterval(recInterval);
+                setDisplaySpeed(0);
+            }
+        }
+
+        // Simulation: Drag Timer Setup
+        function handleDragSimulation() {
+            if (dragArmed || dragRunning) return;
+
+            const status = document.getElementById('drag-status');
+            const btn = document.getElementById('btn-drag');
+
+            dragArmed = true;
+            status.innerText = "ARMED - LAUNCH WHEN READY";
+            status.className = "text-[10px] font-mono font-bold text-amber-500 uppercase tracking-widest animate-pulse";
+            btn.className = "py-2.5 rounded-xl bg-zinc-800 font-bold text-[10px] uppercase tracking-wider transition cursor-not-allowed";
+
+            // Trigger launch
+            setTimeout(() => {
+                launchDragTest();
+            }, 1500);
+        }
+
+        function launchDragTest() {
+            if (!dragArmed) return;
+            dragArmed = false;
+            dragRunning = true;
+
+            const status = document.getElementById('drag-status');
+            const t1 = document.getElementById('drag-t1');
+            const t2 = document.getElementById('drag-t2');
+            const t3 = document.getElementById('drag-t3');
+            const maxVal = document.getElementById('drag-max-val');
+
+            status.innerText = "LAUNCH!";
+            status.className = "text-[10px] font-mono font-bold text-red-500 uppercase tracking-widest";
+
+            dragStart = Date.now();
+            maxRecordedSpeed = 0;
+            t60 = null;
+            t100 = null;
+
+            dragInterval = setInterval(() => {
+                const elapsed = (Date.now() - dragStart) / 1000;
+                
+                // Acceleration formula simulating performance motorcycle launcher curve
+                let currentSpeed = 120 * (1 - Math.exp(-elapsed / 1.5));
+                setDisplaySpeed(currentSpeed);
+
+                if (currentSpeed > maxRecordedSpeed) {
+                    maxRecordedSpeed = currentSpeed;
+                    maxVal.innerText = Math.round(maxRecordedSpeed);
+                }
+
+                if (currentSpeed >= 60 && !t60) {
+                    t60 = elapsed;
+                    t1 =.innerText = `${t60.toFixed(2)}s`;
+                }
+
+                if (currentSpeed >= 100 && !t100) {
+                    t100 = elapsed;
+                    t2.innerText = `${t100.toFixed(2)}s`;
+                }
+
+                if (elapsed >= 3.9 && t3.innerText === "--") {
+                    t3.innerText = `${elapsed.toFixed(2)}s`;
+                }
+
+                if (elapsed >= 5.5) {
+                    clearInterval(dragInterval);
+                    dragRunning = false;
+                    status.innerText = "RUN COMPLETED";
+                    status.className = "text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-widest";
+                    document.getElementById('btn-drag').className = "py-2.5 rounded-xl bg-app-redAccent hover:bg-app-redAccentHover font-bold text-[10px] uppercase tracking-wider transition";
+
+                    // Slowly decel back to idle
+                    let decelSpeed = speed;
+                    let decelTimer = setInterval(() => {
+                        decelSpeed *= 0.8;
+                        setDisplaySpeed(decelSpeed);
+                        if (decelSpeed < 1) {
+                            setDisplaySpeed(0);
+                            clearInterval(decelTimer);
+                        }
+                    }, 100);
+                }
+            }, 60);
+        }
+
+        function handleDragReset() {
+            if (dragRunning) {
+                clearInterval(dragInterval);
+                dragRunning = false;
+            }
+            dragArmed = false;
+            
+            document.getElementById('drag-status').innerText = "READY";
+            document.getElementById('drag-status').className = "text-[10px] font-mono font-bold text-emerald-400 uppercase tracking-widest";
+            document.getElementById('btn-drag').className = "py-2.5 rounded-xl bg-app-redAccent hover:bg-app-redAccentHover font-bold text-[10px] uppercase tracking-wider transition";
+
+            document.getElementById('drag-t1').innerText = "--";
+            document.getElementById('drag-t2').innerText = "--";
+            document.getElementById('drag-t3').innerText = "--";
+            document.getElementById('drag-max-val').innerText = "0";
+
+            setDisplaySpeed(0);
+        }
+    </script>
+</body>
+</html>
+
+```
