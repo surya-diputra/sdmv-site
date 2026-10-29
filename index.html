@@ -516,7 +516,7 @@
 
         .tile-automaxi, .tile-wayx { grid-column: span 2; }
 
-        .tile-automaxi .tile-text { max-width: 52%; }
+        .tile-automaxi .tile-text, .tile-wayx .tile-text { max-width: 52%; }
 
         .tile-peek {
             position: absolute;
@@ -528,17 +528,6 @@
             border: 5px solid #111;
             box-shadow: 0 24px 44px -18px rgba(0, 0, 0, 0.55);
             transform: rotate(5deg);
-        }
-
-        .tile-dash-photo {
-            position: absolute;
-            left: 28px;
-            right: -36px;
-            bottom: -18px;
-            width: calc(100% + 8px);
-            max-width: none;
-            border-radius: 16px;
-            box-shadow: 0 20px 40px -16px rgba(0, 0, 0, 0.55);
         }
 
         .tile-wingdeck, .tile-fakegps, .tile-engine { grid-column: span 2; grid-row: span 2; }
@@ -800,16 +789,6 @@
         .duo .screen { --screen-ratio: 1080 / 2400; }
 
         .duo .phone { max-width: 280px; }
-
-        .on-dash { margin-bottom: 64px; }
-
-        .on-dash figcaption {
-            max-width: 46em;
-            margin: 14px auto 0;
-            font-size: 14px;
-            text-align: center;
-            color: var(--ink-2);
-        }
 
         .duo-caption {
             font-size: 14px;
@@ -1330,7 +1309,7 @@
                         <h3>WayXAuto</h3>
                         <p>Android Auto on an OMOWAY display, over Wi-Fi.</p>
                     </div>
-                    <img class="tile-dash-photo" src="assets/wayxauto-dash.jpg" alt="" width="1800" height="718" loading="lazy">
+                    <img class="tile-peek" src="assets/wayxauto-main.jpg" alt="" width="702" height="1560" loading="lazy">
                 </a>
 
                 <a href="#wingdeck" class="tile tile-wingdeck glass">
@@ -1444,13 +1423,6 @@
                 <h2>Android Auto, on the dash you already have.</h2>
                 <p>Two free, ad-free apps that send Android Auto from your phone to your motorcycle's built-in screen. Set up once, then connect and ride.</p>
             </div>
-
-            <figure class="on-dash">
-                <div class="frame glass">
-                    <img src="assets/wayxauto-dash.jpg" alt="An OMOWAY motorcycle display showing Android Auto with Google Maps turn-by-turn directions, an ETA card and the bike's speed and battery" width="1800" height="718" loading="lazy">
-                </div>
-                <figcaption>WayXAuto showing Android Auto navigation on an OMOWAY display, photographed during road testing. Street names are blurred.</figcaption>
-            </figure>
 
             <div class="duo">
                 <figure class="showcase">
