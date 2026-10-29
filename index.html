@@ -372,6 +372,43 @@
             .dock .dock-label { display: none; }
         }
 
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+            width: min(100%, 720px);
+            margin-top: 56px;
+            list-style: none;
+        }
+
+        .stats li {
+            display: flex;
+            flex-direction: column;
+            gap: 6px;
+            padding: 0 16px;
+        }
+
+        .stats li + li { box-shadow: inset 1px 0 0 var(--line); }
+
+        .stats strong {
+            font-family: var(--font-display);
+            font-size: clamp(30px, 4.4vw, 44px);
+            font-weight: 800;
+            line-height: 1;
+            letter-spacing: -0.04em;
+        }
+
+        .stats span {
+            font-size: 14px;
+            line-height: 1.35;
+            color: var(--ink-2);
+        }
+
+        @media (max-width: 600px) {
+            .stats { grid-template-columns: 1fr 1fr; row-gap: 28px; }
+            .stats li:first-child { grid-column: 1 / -1; }
+            .stats li:nth-child(2) { box-shadow: none; }
+        }
+
         /* One orchestrated entrance for the hero */
         @media (prefers-reduced-motion: no-preference) {
             .rise {
@@ -487,7 +524,8 @@
         }
 
         .tile-more {
-            display: inline-flex;
+            display: flex;
+            width: fit-content;
             align-items: center;
             gap: 6px;
             margin-top: 12px;
@@ -1276,6 +1314,12 @@
                 <li><a href="#wingdeck"><span class="app-icon"><img src="assets/icon-wingdeck.png" alt="" width="68" height="68"></span><span class="dock-label">WingDeck</span></a></li>
                 <li><a href="#fakegps"><span class="app-icon"><img src="assets/icon-fakegps.png" alt="" width="68" height="68"></span><span class="dock-label">Fake GPS - Inertia Joystick</span></a></li>
             </ul>
+
+            <ul class="stats rise" style="--i: 4;" aria-label="Downloads">
+                <li><strong>12,000+</strong><span>downloads across SDMV apps</span></li>
+                <li><strong>10K+</strong><span>DashConnect installs on Google Play</span></li>
+                <li><strong>1,000+</strong><span>AutoMaxi downloads on GitHub</span></li>
+            </ul>
         </section>
 
         <!-- ================= All apps (bento) ================= -->
@@ -1291,6 +1335,7 @@
                         <span class="app-icon"><img src="assets/icon-dashconnect.png" alt="" width="44" height="44"></span>
                         <h3>SDMV DashConnect</h3>
                         <p>Google Maps directions on your motorcycle's own speedometer, a floating HUD and a GPS ride recorder.</p>
+                        <span class="tile-badge">10K+ downloads</span>
                         <span class="tile-more">See DashConnect <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span>
                     </div>
                     <img class="tile-phone" src="assets/screen-ride-dash.jpg" alt="" width="720" height="1560" loading="lazy">
@@ -1300,6 +1345,7 @@
                     <div class="tile-text">
                         <h3>AutoMaxi</h3>
                         <p>Android Auto on a Yamaha XMAX or NMAX cluster.</p>
+                        <span class="tile-badge">1,000+ downloads</span>
                     </div>
                     <img class="tile-peek" src="assets/automaxi-main.jpg" alt="" width="720" height="1600" loading="lazy">
                 </a>
