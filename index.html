@@ -283,14 +283,7 @@
             text-align: center;
         }
 
-        .hero-logo {
-            width: min(300px, 70vw);
-            height: auto;
-            filter: drop-shadow(0 18px 30px rgba(120, 10, 15, 0.25));
-        }
-
         .hero h1 {
-            margin-top: 36px;
             max-width: 12em;
             font-family: var(--font-display);
             font-size: clamp(44px, 6.4vw, 80px);
@@ -567,22 +560,14 @@
             object-position: 60% 50%;
         }
 
-        .tile-fakegps .tile-media {
+        .tile-fakegps .tile-media,
+        .tile-engine .tile-media {
             flex: none;
             align-self: center;
             width: 78%;
             margin-bottom: -260px;
             border-radius: 26px;
             border: 6px solid #111;
-        }
-
-        .tile-engine-art {
-            align-self: center;
-            width: 72%;
-            margin-top: auto;
-            border-radius: 28px;
-            box-shadow: 0 24px 48px -20px rgba(0, 0, 0, 0.55);
-            transform: rotate(4deg) translateY(36px);
         }
 
         .tile-badge {
@@ -602,7 +587,7 @@
             .tile-dash { grid-column: span 2; grid-row: auto; min-height: 520px; }
             .tile-dash .tile-phone { width: min(220px, 46%); top: auto; bottom: -140px; }
             .tile-automaxi, .tile-wayx, .tile-wingdeck, .tile-fakegps, .tile-engine { grid-column: span 1; grid-row: auto; }
-            .tile-wingdeck, .tile-fakegps { min-height: 460px; }
+            .tile-wingdeck, .tile-fakegps, .tile-engine { min-height: 460px; }
         }
 
         @media (max-width: 600px) {
@@ -1295,17 +1280,16 @@
 
         <!-- ================= Hero ================= -->
         <section class="hero container">
-            <img class="hero-logo rise" src="assets/sdmv-logo.png" alt="SDMV" width="444" height="129">
-            <h1 class="rise" style="--i: 1;">Apps for your ride and your desk.</h1>
-            <p class="lede rise" style="--i: 2;">
+            <h1 class="rise">Apps for your ride and your desk.</h1>
+            <p class="lede rise" style="--i: 1;">
                 From Google Maps on your speedometer to a spare phone that runs your desk, SDMV builds small, focused apps that each do one job well.
             </p>
-            <div class="btn-row rise" style="--i: 3;">
+            <div class="btn-row rise" style="--i: 2;">
                 <a href="#apps" class="btn btn-primary">Explore the apps</a>
                 <a href="#support" class="btn btn-glass">Support SDMV</a>
             </div>
 
-            <ul class="dock glass rise" style="--i: 4;" aria-label="SDMV apps">
+            <ul class="dock glass rise" style="--i: 3;" aria-label="SDMV apps">
                 <li><a href="#dashconnect"><span class="app-icon"><img src="assets/icon-dashconnect.png" alt="" width="68" height="68"></span><span class="dock-label">SDMV DashConnect</span></a></li>
                 <li><a href="#automaxi"><span class="app-icon is-contained icon-automaxi"><img src="assets/icon-automaxi.png" alt="" width="68" height="68"></span><span class="dock-label">AutoMaxi</span></a></li>
                 <li><a href="#wayxauto"><span class="app-icon"><img src="assets/icon-wayxauto.png" alt="" width="68" height="68"></span><span class="dock-label">WayXAuto</span></a></li>
@@ -1367,13 +1351,14 @@
                     <div class="tile-media"><img src="assets/fakegps-joystick.jpg" alt="" width="720" height="1561" loading="lazy"></div>
                 </a>
 
-                <a id="enginesound" href="https://surya-diputra.github.io/enginesound/" target="_blank" rel="noopener" class="tile tile-engine glass">
+                <a href="#enginesound" class="tile tile-engine glass">
                     <div class="tile-text">
+                        <span class="app-icon"><img src="assets/icon-enginesound.png" alt="" width="44" height="44"></span>
                         <h3>SDMV EngineSound</h3>
-                        <p>A live engine sound for your electric motorcycle. It follows your GPS speed in Ride mode, or the on-screen throttle in Rev mode.</p>
+                        <p>A live engine sound for your electric motorcycle, following your GPS speed.</p>
                         <span class="tile-badge">Coming soon</span>
                     </div>
-                    <img class="tile-engine-art" src="assets/enginesound-logo.jpg" alt="SDMV EngineSound logo" width="800" height="800" loading="lazy">
+                    <div class="tile-media"><img src="assets/enginesound-ride.jpg" alt="" width="720" height="1600" loading="lazy"></div>
                 </a>
             </div>
         </section>
@@ -1718,6 +1703,60 @@
                             <li>Open the app, pick a spot on the map and start the joystick.</li>
                         </ol>
                     </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= EngineSound ================= -->
+        <section id="enginesound" class="chapter container">
+            <div class="chapter-head">
+                <span class="app-icon"><img src="assets/icon-enginesound.png" alt="SDMV EngineSound app icon" width="96" height="96"></span>
+                <p class="chapter-name">SDMV EngineSound</p>
+                <h2>Give your electric bike an engine.</h2>
+                <p>EngineSound synthesizes a combustion engine live on your phone. The revs follow your GPS speed through a virtual gearbox, so it pulls through the gears as you ride away and settles when you cruise. There are no sound recordings in the app: every note is made as you ride.</p>
+                <div class="btn-row">
+                    <a href="https://surya-diputra.github.io/enginesound/" target="_blank" rel="noopener" class="btn btn-glass">App support</a>
+                </div>
+                <p class="chapter-meta">Android and iOS. Coming soon.</p>
+            </div>
+
+            <div class="split">
+                <figure class="showcase">
+                    <div class="phone glass">
+                        <div class="screen" style="--screen-ratio: 720 / 1600;">
+                            <img class="shot is-active" id="enginesound-shot-0" src="assets/enginesound-ride.jpg" width="720" height="1600" loading="lazy" alt="Ride mode dash: Superbike I4 in fifth gear at 62 km/h from GPS speed">
+                            <img class="shot" id="enginesound-shot-1" src="assets/enginesound-rev.jpg" width="720" height="1600" loading="lazy" alt="Rev mode with the throttle slider held at 67 percent in second gear">
+                            <img class="shot" id="enginesound-shot-2" src="assets/enginesound-engines.jpg" width="720" height="1600" loading="lazy" alt="Engine list with cars and futuristic electric drives">
+                            <img class="shot" id="enginesound-shot-3" src="assets/enginesound-electric.jpg" width="720" height="1600" loading="lazy" alt="Neon Racer electric drive in single-speed D at 190 km/h">
+                        </div>
+                    </div>
+                    <div class="segmented glass" role="tablist" aria-label="EngineSound screens">
+                        <button type="button" role="tab" aria-selected="true" aria-controls="enginesound-shot-0">Ride</button>
+                        <button type="button" role="tab" aria-selected="false" aria-controls="enginesound-shot-1" tabindex="-1">Rev</button>
+                        <button type="button" role="tab" aria-selected="false" aria-controls="enginesound-shot-2" tabindex="-1">Engines</button>
+                        <button type="button" role="tab" aria-selected="false" aria-controls="enginesound-shot-3" tabindex="-1">Electric</button>
+                    </div>
+                </figure>
+
+                <div class="panel glass">
+                    <ul class="features">
+                        <li>
+                            <i class="fa-solid fa-gauge-high" aria-hidden="true"></i>
+                            <div><h3>Ride mode</h3><p>Your GPS speed drives an automatic gearbox that changes up as you pull away and drops the revs when you hold a steady speed.</p></div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-sliders" aria-hidden="true"></i>
+                            <div><h3>Rev mode</h3><p>Throttle and brake sliders and shift buttons, with each vehicle's real top speed and gearing.</p></div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                            <div><h3>Thirty engines</h3><p>Ten motorcycles, ten cars and ten futuristic electric drives, from a thumper single to a V12.</p></div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-headphones" aria-hidden="true"></i>
+                            <div><h3>Plays like music</h3><p>Keeps going in the background with the screen off. Control it from the lock screen, the notification or your headset.</p></div>
+                        </li>
+                    </ul>
                 </div>
             </div>
         </section>
