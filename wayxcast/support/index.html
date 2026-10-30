@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WayXCast Support | SDMV</title>
+    <meta name="description" content="Help with WayXCast: connecting to the bike display, when the picture doesn't show, automatic rides, ride videos, WayXCast Pro and sharing diagnostics. Contact hello@sdmv.my.id.">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F5F7">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+    <link rel="canonical" href="https://sdmv.my.id/wayxcast/support/">
+    <link rel="icon" type="image/png" href="../../assets/sdmv-icon-192.png">
+    <link rel="apple-touch-icon" href="../../assets/icon-wayxcast.png">
+
+    <!-- Apply saved theme before first paint -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('sdmv-theme');
+                if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+            } catch (e) {}
+        })();
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../wayxcast.css">
+</head>
+<body>
+
+    <!-- Faint ember and shade so the glass has something to refract -->
+    <div class="ambient" aria-hidden="true"></div>
+
+    <header class="nav-wrap">
+        <div class="container">
+            <nav class="nav glass" aria-label="Main">
+                <a href="../../" class="nav-logo" aria-label="SDMV home">
+                    <img src="../../assets/sdmv-logo.png" alt="SDMV" width="103" height="30">
+                </a>
+                <div class="nav-links">
+                    <a href="../../#apps" class="nav-extra">Apps</a>
+                    <a href="../">WayXCast</a>
+                    <a href="./" aria-current="page">Support</a>
+                    <a href="../privacy/" class="nav-extra">Privacy</a>
+                    <a href="../terms/" class="nav-extra">Terms</a>
+                    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch theme">
+                        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <section class="chapter page-top container">
+            <div class="chapter-head">
+                <a href="../" class="app-icon icon-wayxcast" aria-label="WayXCast"><img src="../../assets/icon-wayxcast.png" alt="" width="96" height="96"></a>
+                <p class="chapter-name">WayXCast Support</p>
+                <h1>How can we help?</h1>
+                <p>Answers to the common questions are below. If something still isn't working, email us and we'll get back to you.</p>
+                <div class="btn-row">
+                    <a href="mailto:hello@sdmv.my.id?subject=WayXCast%20support" class="btn btn-primary">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        hello@sdmv.my.id
+                    </a>
+                </div>
+                <p class="chapter-meta">Tell us your phone model and what you see on the bike display. A diagnostics report helps too (see below).</p>
+            </div>
+
+            <div class="panel glass faq">
+                <details open>
+                    <summary><i class="fa-solid fa-wifi" aria-hidden="true"></i><span>How do I connect to the bike display?</span><i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i></summary>
+                    <div class="answer">
+                        <p>WayXCast works with compatible motorcycle displays over the bike's own Wi-Fi. There's no account, sign-in or Bluetooth key. Do this once, while parked:</p>
+                        <ol>
+                            <li>Park and switch on the motorcycle.</li>
+                            <li>Open the <strong>Navigation</strong> screen on the bike's display and keep it open.</li>
+                            <li>In WayXCast, open the <strong>Bike</strong> tab.
+                                <ul>
+                                    <li><strong>Android:</strong> tap <strong>Find</strong>, then tap your motorcycle in the list. Allow Nearby devices if Android asks, and confirm any connection prompt.</li>
+                                    <li><strong>iPhone:</strong> tap <strong>Connect the bike display</strong> and follow the connection guide. It joins the bike's Wi-Fi network (you need its password once; iOS remembers it) and finds the display. Tap Allow if iOS asks to find devices on your local network.</li>
+                                </ul>
+                            </li>
+                            <li>Look at the bike's display. Once connected, it shows the WayXCast ride companion by itself.</li>
+                        </ol>
+                        <p>Keep your phone near the bike. <strong>Setup and connection help</strong> in the Bike tab walks through the same steps.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary><i class="fa-solid fa-display" aria-hidden="true"></i><span>The bike display doesn't show the picture</span><i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i></summary>
+                    <div class="answer">
+                        <p>A Wi-Fi connection alone doesn't mean a picture is on the display. Try these in order:</p>
+                        <ul>
+                            <li><strong>Close casting in any other app</strong>, on this phone or on another phone nearby. Only one app can use the bike display at a time.</li>
+                            <li><strong>Close and reopen Navigation</strong> on the motorcycle, especially if it still shows another app.</li>
+                            <li><strong>Keep WayXCast open</strong> with the bike's Navigation screen showing, and give it up to 10 seconds; the first picture can take a moment.</li>
+                            <li>On iPhone, check in Settings → Wi-Fi that your iPhone is joined to the bike's network, and that Local Network is on for WayXCast in Settings.</li>
+                        </ul>
+                        <p>Still nothing? Share diagnostics from the Bike tab and send it to us.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary><i class="fa-solid fa-route" aria-hidden="true"></i><span>How do automatic rides work?</span><i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i></summary>
+                    <div class="answer">
+                        <p>Turn on <strong>Automatic rides</strong> in the Bike tab. While the bike display is connected, a ride starts when you ride off and ends when you park and switch the bike off. You can lock your phone; WayXCast keeps recording and reconnects if the bike's display drops.</p>
+                        <p>On iPhone, automatic rides need location set to <strong>Always</strong>. Choose Change to Always Allow when iOS asks, or set it in Settings.</p>
+                        <p>You can also start and stop a ride yourself from the Ride tab. Rides still record on your phone when the bike display isn't connected.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary><i class="fa-solid fa-film" aria-hidden="true"></i><span>How do I make a ride video?</span><i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i></summary>
+                    <div class="answer">
+                        <p>Open a ride in the Rides tab and tap <strong>Make ride video</strong>. Choose the length, resolution and quality, then keep WayXCast open until it's done. Each video is kept with its ride, so you can make a few and choose, then share it or save it to your gallery.</p>
+                        <p>Photos and videos you took during the ride pop up along the route. Allow photos and videos so WayXCast can find them. Add your own with <strong>+</strong>, tap a video to choose the part that plays, or tap <strong>×</strong> to leave one out.</p>
+                        <p>The video is drawn over a map, so it needs an internet connection. If it couldn't be made, check your connection and try again.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary><i class="fa-solid fa-star" aria-hidden="true"></i><span>Buying WayXCast Pro, and Restore purchase</span><i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i></summary>
+                    <div class="answer">
+                        <p>WayXCast Pro is a one-time purchase through the App Store or Google Play, with no subscription. Open <strong>WayXCast Pro</strong> in the Bike tab, or tap the Free badge at the top of a tab.</p>
+                        <p>On a new phone, or after reinstalling, tap <strong>Restore purchase</strong> on the Pro screen while signed in to the same Apple Account or Google account. If Pro shows as waiting, for example for Ask to Buy, it turns on as soon as the purchase is approved.</p>
+                        <p>Refunds are handled by the App Store or Google Play under their rules. WayXCast never sees your payment details.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary><i class="fa-solid fa-stethoscope" aria-hidden="true"></i><span>Sharing diagnostics</span><i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i></summary>
+                    <div class="answer">
+                        <p>If the bike display doesn't show WayXCast, open the <strong>Bike</strong> tab, tap <strong>Share diagnostics</strong> and send the report to <a href="mailto:hello@sdmv.my.id?subject=WayXCast%20diagnostics">hello@sdmv.my.id</a>.</p>
+                        <p>The report goes only where you send it. It contains no location and masks network addresses.</p>
+                    </div>
+                </details>
+            </div>
+
+            <aside class="safety glass" aria-labelledby="safety-title">
+                <i class="fa-solid fa-triangle-exclamation" aria-hidden="true"></i>
+                <div>
+                    <h2 id="safety-title">Set up while parked</h2>
+                    <p>Never touch your phone or look away from the road to use WayXCast while riding. Connect, choose what the display shows and start your ride before you set off. The bike display is for quick glances only, and you are always responsible for riding safely and lawfully.</p>
+                </div>
+            </aside>
+
+            <p class="note">WayXCast is an independent project by SDMV. Read the <a href="../privacy/">Privacy Policy</a> and <a href="../terms/">Terms</a>.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="../../" aria-label="SDMV home"><img src="../../assets/sdmv-logo.png" alt="SDMV" width="89" height="26"></a>
+                <nav aria-label="Footer">
+                    <a href="../../#apps">All SDMV apps</a>
+                    <a href="../">WayXCast</a>
+                    <a href="../privacy/">Privacy Policy</a>
+                    <a href="../terms/">Terms</a>
+                </nav>
+            </div>
+            <div class="footer-legal">
+                <p>© 2026 SDMV. All rights reserved.</p>
+                <p>App Store, iPhone, Google Play and Android are trademarks of their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../wayxcast.js"></script>
+</body>
+</html>

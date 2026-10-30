@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WayXCast - Your ride, on your bike's display | SDMV</title>
+    <meta name="description" content="WayXCast turns your motorcycle's display into a ride companion, records every ride and makes a video of it to share. Works with compatible motorcycle displays over the bike's Wi-Fi. Coming soon for Android and iPhone.">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F5F7">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+    <link rel="canonical" href="https://sdmv.my.id/wayxcast/">
+    <link rel="icon" type="image/png" href="../assets/sdmv-icon-192.png">
+    <link rel="apple-touch-icon" href="../assets/icon-wayxcast.png">
+
+    <!-- Apply saved theme before first paint -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('sdmv-theme');
+                if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+            } catch (e) {}
+        })();
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="wayxcast.css">
+</head>
+<body>
+
+    <!-- Faint ember and shade so the glass has something to refract -->
+    <div class="ambient" aria-hidden="true"></div>
+
+    <header class="nav-wrap">
+        <div class="container">
+            <nav class="nav glass" aria-label="Main">
+                <a href="../" class="nav-logo" aria-label="SDMV home">
+                    <img src="../assets/sdmv-logo.png" alt="SDMV" width="103" height="30">
+                </a>
+                <div class="nav-links">
+                    <a href="../#apps" class="nav-extra">Apps</a>
+                    <a href="./" aria-current="page">WayXCast</a>
+                    <a href="support/">Support</a>
+                    <a href="privacy/" class="nav-extra">Privacy</a>
+                    <a href="terms/" class="nav-extra">Terms</a>
+                    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch theme">
+                        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- ================= Intro ================= -->
+        <section class="chapter page-top container">
+            <div class="chapter-head">
+                <span class="app-icon icon-wayxcast rise"><img src="../assets/icon-wayxcast.png" alt="WayXCast app icon" width="96" height="96"></span>
+                <p class="chapter-name rise" style="--i: 1;">WayXCast</p>
+                <h1 class="rise" style="--i: 1;">Your ride, on your bike's display.</h1>
+                <p class="rise" style="--i: 2;">WayXCast turns your motorcycle's display into a ride companion, records every ride, and makes a video of it to share. It works with compatible motorcycle displays over the bike's Wi-Fi.</p>
+                <div class="btn-row rise" style="--i: 3;">
+                    <a href="#plans" class="btn btn-primary">Free and Pro</a>
+                    <a href="support/" class="btn btn-glass">Support</a>
+                </div>
+                <span class="tile-badge rise" style="--i: 3;">Coming soon to the App Store and Google Play</span>
+                <p class="chapter-meta rise" style="--i: 4;">Android and iPhone. English and Bahasa Indonesia.</p>
+            </div>
+
+            <div class="split">
+                <figure class="showcase">
+                    <div class="phone glass">
+                        <div class="screen" style="--screen-ratio: 720 / 1600;">
+                            <img class="shot is-active" id="wayxcast-shot-0" src="../assets/wayxcast-companion.jpg" width="720" height="1600" alt="WayXCast Ride tab with a preview of the bike display showing a UV alert, the Start ride button and this week's distance">
+                            <img class="shot" id="wayxcast-shot-1" src="../assets/wayxcast-ride.jpg" width="720" height="1600" loading="lazy" alt="A ride page with the route on a map, distance, riding time, average and top speed, climb and the Make ride video button">
+                            <img class="shot" id="wayxcast-shot-2" src="../assets/wayxcast-slideshow.jpg" width="720" height="1600" loading="lazy" alt="Display tab with a photo slideshow on the bike display preview and the rider's photos">
+                            <img class="shot" id="wayxcast-shot-3" src="../assets/wayxcast-connect.jpg" width="720" height="1600" loading="lazy" alt="Bike tab with Find for the bike display, automatic rides, Share diagnostics and WayXCast Pro">
+                        </div>
+                    </div>
+                    <div class="segmented glass" role="tablist" aria-label="WayXCast screens">
+                        <button type="button" role="tab" aria-selected="true" aria-controls="wayxcast-shot-0">Ride</button>
+                        <button type="button" role="tab" aria-selected="false" aria-controls="wayxcast-shot-1" tabindex="-1">Ride page</button>
+                        <button type="button" role="tab" aria-selected="false" aria-controls="wayxcast-shot-2" tabindex="-1">Display</button>
+                        <button type="button" role="tab" aria-selected="false" aria-controls="wayxcast-shot-3" tabindex="-1">Bike</button>
+                    </div>
+                </figure>
+
+                <div class="panel glass">
+                    <ul class="features">
+                        <li>
+                            <i class="fa-solid fa-cloud-sun" aria-hidden="true"></i>
+                            <div>
+                                <h3>A ride companion on the bike display</h3>
+                                <p>Weather, rain alerts, air quality, sunset, prayer times, earthquake alerts and your trip, drawn for the wide bike display and easy to read at a glance.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-route" aria-hidden="true"></i>
+                            <div>
+                                <h3>Every ride recorded</h3>
+                                <p>Route, distance, riding time, speed and climb. Turn on automatic rides and a ride starts when you ride off and ends when you park. Export any ride as GPX.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-film" aria-hidden="true"></i>
+                            <div>
+                                <h3>Ride videos</h3>
+                                <p>A 3D flyover of your route with the photos and clips you took along the way, ready to share.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-images" aria-hidden="true"></i>
+                            <div>
+                                <h3>Your photos on the bike</h3>
+                                <p>A slideshow of your photos and GIFs on the bike display, framed around faces so nobody gets cut off.</p>
+                            </div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-mobile-screen" aria-hidden="true"></i>
+                            <div>
+                                <h3>Screen sharing</h3>
+                                <p>Show your phone's screen on the bike display when you want to.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+
+            <div class="facts glass">
+                <div>
+                    <h4>Over the bike's Wi-Fi</h4>
+                    <p>Works with compatible motorcycle displays. No account, no sign-in and no Bluetooth key.</p>
+                </div>
+                <div>
+                    <h4>Stays on your phone</h4>
+                    <p>No ads or tracking. Your rides, photos and videos stay on your phone unless you share them.</p>
+                </div>
+                <div>
+                    <h4>Set up while parked</h4>
+                    <p>Once it's connected, the bike display is for quick glances. Your phone can stay in your pocket.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= Free and Pro ================= -->
+        <section id="plans" class="section container">
+            <div class="section-head">
+                <h2>Free to ride. Pro if you want more.</h2>
+                <p>Riding, recording and the ride companion are free. WayXCast Pro is a one-time purchase through the App Store or Google Play, with no subscription.</p>
+            </div>
+
+            <div class="pair">
+                <article class="pair-card glass">
+                    <div class="pair-top">
+                        <span class="app-icon icon-wayxcast"><img src="../assets/icon-wayxcast.png" alt="" width="64" height="64"></span>
+                        <div>
+                            <h3>Free</h3>
+                            <p>Everything you need to ride</p>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>
+                            <i class="fa-solid fa-route" aria-hidden="true"></i>
+                            <div><h3>Rides and automatic rides</h3><p>No limit on rides, with the ride log and GPX export.</p></div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-cloud-sun" aria-hidden="true"></i>
+                            <div><h3>The ride companion</h3><p>Up to 6 topics on the bike display at once, plus earthquake alerts.</p></div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-images" aria-hidden="true"></i>
+                            <div><h3>Slideshow and screen sharing</h3><p>A slideshow of 10 photos, and screen sharing for 15 minutes at a time.</p></div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-film" aria-hidden="true"></i>
+                            <div><h3>Ride videos up to 1080p</h3><p>Up to 60 seconds, with up to 8 photos and clips.</p></div>
+                        </li>
+                    </ul>
+                    <span class="plan-tag">No ads, no account</span>
+                </article>
+
+                <article class="pair-card glass">
+                    <div class="pair-top">
+                        <span class="app-icon icon-wayxcast"><img src="../assets/icon-wayxcast.png" alt="" width="64" height="64"></span>
+                        <div>
+                            <h3>WayXCast Pro</h3>
+                            <p>One purchase, yours to keep</p>
+                        </div>
+                    </div>
+                    <ul class="features">
+                        <li>
+                            <i class="fa-solid fa-layer-group" aria-hidden="true"></i>
+                            <div><h3>More on your bike display</h3><p>Every topic at once, with Health, your next calendar event and weekly milestones.</p></div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-images" aria-hidden="true"></i>
+                            <div><h3>A bigger slideshow, no sharing limit</h3><p>Up to 40 photos and GIFs, and screen sharing for as long as you ride.</p></div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-film" aria-hidden="true"></i>
+                            <div><h3>Sharper, longer ride videos</h3><p>1440p and Best quality, videos up to 90 seconds, with up to 20 photos and clips.</p></div>
+                        </li>
+                        <li>
+                            <i class="fa-solid fa-palette" aria-hidden="true"></i>
+                            <div><h3>Display colours and a badge</h3><p>Five more bike display colours and a Supporter badge in the app.</p></div>
+                        </li>
+                    </ul>
+                    <span class="plan-tag">One-time purchase, no subscription</span>
+                </article>
+            </div>
+
+            <p class="note">Pro is bought through the App Store or Google Play, and their refund rules apply. Restore purchase in the app brings Pro back on a new phone with the same Apple Account or Google account.</p>
+        </section>
+
+        <!-- ================= Help and legal ================= -->
+        <section class="section container">
+            <div class="support glass">
+                <div>
+                    <h2>An independent project by SDMV.</h2>
+                    <p>WayXCast is made by SDMV. It works with compatible motorcycle displays over the bike's Wi-Fi and is not affiliated with any motorcycle or display maker, Apple or Google. Questions or problems? Write to <a href="mailto:hello@sdmv.my.id">hello@sdmv.my.id</a>.</p>
+                </div>
+                <div class="tip-options">
+                    <a class="tip" href="support/">
+                        <div><strong>Support</strong><span>Connecting, rides, videos and Pro</span></div>
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                    <a class="tip" href="privacy/">
+                        <div><strong>Privacy Policy</strong><span>What stays on your phone and what doesn't</span></div>
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                    <a class="tip" href="terms/">
+                        <div><strong>Terms</strong><span>Including the Before you ride notice</span></div>
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+
+            <p class="note">Set everything up while parked, and never use your phone or WayXCast while riding. The bike display is for quick glances only.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="../" aria-label="SDMV home"><img src="../assets/sdmv-logo.png" alt="SDMV" width="89" height="26"></a>
+                <nav aria-label="Footer">
+                    <a href="../#apps">All SDMV apps</a>
+                    <a href="support/">Support</a>
+                    <a href="privacy/">Privacy Policy</a>
+                    <a href="terms/">Terms</a>
+                </nav>
+            </div>
+            <div class="footer-legal">
+                <p>© 2026 SDMV. All rights reserved.</p>
+                <p>App Store, iPhone, Google Play and Android are trademarks of their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="wayxcast.js"></script>
+</body>
+</html>

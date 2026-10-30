@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>SDMV - Apps for your ride and your desk</title>
-    <meta name="description" content="SDMV builds DashConnect, AutoMaxi, WayXAuto, EngineSound, WingDeck and Fake GPS - Inertia Joystick.">
+    <meta name="description" content="SDMV builds DashConnect, AutoMaxi, WayXAuto, WayXCast, EngineSound, WingDeck and Fake GPS - Inertia Joystick.">
     <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F5F7">
     <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
     <link rel="icon" type="image/png" href="assets/sdmv-icon-192.png">
@@ -449,6 +449,7 @@
         }
 
         .icon-automaxi { --icon-bg: #0C1E33; }
+        .icon-wayxcast { --icon-bg: #A3DE02; }
 
         /* ---------- Section heads ---------- */
         .section { padding: 72px 0; scroll-margin-top: 80px; }
@@ -554,7 +555,9 @@
 
         .tile-automaxi, .tile-wayx { grid-column: span 2; }
 
-        .tile-automaxi .tile-text, .tile-wayx .tile-text { max-width: 52%; }
+        .tile-automaxi .tile-text, .tile-wayx .tile-text, .tile-wayxcast .tile-text { max-width: 52%; }
+
+        .tile-wayxcast { grid-column: span 6; }
 
         .tile-peek {
             position: absolute;
@@ -615,11 +618,12 @@
             .tile-dash .tile-phone { width: min(220px, 46%); top: auto; bottom: -140px; }
             .tile-automaxi, .tile-wayx, .tile-wingdeck, .tile-fakegps, .tile-engine { grid-column: span 1; grid-row: auto; }
             .tile-wingdeck, .tile-fakegps, .tile-engine { min-height: 460px; }
+            .tile-wayxcast { grid-column: span 2; }
         }
 
         @media (max-width: 600px) {
             .bento { grid-template-columns: 1fr; }
-            .tile-dash, .tile-automaxi, .tile-wayx, .tile-wingdeck, .tile-fakegps, .tile-engine { grid-column: auto; }
+            .tile-dash, .tile-automaxi, .tile-wayx, .tile-wingdeck, .tile-fakegps, .tile-engine, .tile-wayxcast { grid-column: auto; }
             .tile-dash { min-height: 560px; }
             .tile-dash .tile-phone { width: 210px; right: 50%; bottom: -200px; transform: translateX(50%) rotate(-4deg); }
         }
@@ -1325,8 +1329,8 @@
         <!-- ================= All apps (bento) ================= -->
         <section id="apps" class="section container">
             <div class="section-head">
-                <h2>Six apps. One maker.</h2>
-                <p>Four for the motorcycle, one for the desk and one for developers. Pick one to see what it does.</p>
+                <h2>Seven apps. One maker.</h2>
+                <p>Five for the motorcycle, one for the desk and one for developers. Pick one to see what it does.</p>
             </div>
 
             <div class="bento">
@@ -1384,6 +1388,17 @@
                         <span class="tile-badge">Coming soon</span>
                     </div>
                     <div class="tile-media"><img src="assets/enginesound-ride.jpg" alt="" width="720" height="1600" loading="lazy"></div>
+                </a>
+
+                <a href="wayxcast/" class="tile tile-wayxcast glass">
+                    <div class="tile-text">
+                        <span class="app-icon icon-wayxcast"><img src="assets/icon-wayxcast.png" alt="" width="44" height="44"></span>
+                        <h3>WayXCast</h3>
+                        <p>A ride companion on your motorcycle's display over the bike's Wi-Fi, with every ride recorded and turned into a video.</p>
+                        <span class="tile-badge">Coming soon</span>
+                        <span class="tile-more">See WayXCast <i class="fa-solid fa-chevron-right" aria-hidden="true"></i></span>
+                    </div>
+                    <img class="tile-peek" src="assets/wayxcast-companion.jpg" alt="" width="720" height="1600" loading="lazy">
                 </a>
             </div>
         </section>
