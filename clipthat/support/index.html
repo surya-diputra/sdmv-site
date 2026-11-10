@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipThat Studio Support | SDMV</title>
+    <meta name="description" content="Help with ClipThat Studio: where your media is stored, captions, filming as a crew, the Director browsing a camera's videos, the AI Director and sending plans. Contact hello@sdmv.my.id.">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F5F7">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+    <link rel="canonical" href="https://sdmv.my.id/clipthat/support/">
+    <link rel="icon" type="image/png" href="../../assets/sdmv-icon-192.png">
+    <link rel="apple-touch-icon" href="../../assets/icon-clipthat.png">
+
+    <!-- Apply saved theme before first paint -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('sdmv-theme');
+                if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+            } catch (e) {}
+        })();
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../clipthat.css">
+</head>
+<body>
+
+    <!-- Faint ember and shade so the glass has something to refract -->
+    <div class="ambient" aria-hidden="true"></div>
+
+    <header class="nav-wrap">
+        <div class="container">
+            <nav class="nav glass" aria-label="Main">
+                <a href="../../" class="nav-logo" aria-label="SDMV home">
+                    <img src="../../assets/sdmv-logo.png" alt="SDMV" width="103" height="30">
+                </a>
+                <div class="nav-links">
+                    <a href="../../#apps" class="nav-extra">Apps</a>
+                    <a href="../">ClipThat</a>
+                    <a href="./" aria-current="page">Support</a>
+                    <a href="../privacy/" class="nav-extra">Privacy</a>
+                    <a href="../terms/" class="nav-extra">Terms</a>
+                    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch theme">
+                        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <section class="chapter page-top container">
+            <div class="chapter-head">
+                <a href="../" class="app-icon icon-clipthat" aria-label="ClipThat Studio"><img src="../../assets/icon-clipthat.png" alt="" width="96" height="96"></a>
+                <p class="chapter-name">ClipThat Studio Support</p>
+                <h1>How can we help?</h1>
+                <p>Answers to the common questions are below. If something still isn't working, email us and we'll get back to you.</p>
+                <div class="btn-row">
+                    <a href="mailto:hello@sdmv.my.id?subject=ClipThat%20Studio%20support" class="btn btn-primary">
+                        <i class="fa-solid fa-envelope" aria-hidden="true"></i>
+                        hello@sdmv.my.id
+                    </a>
+                </div>
+                <p class="chapter-meta">Tell us your device model, the app version (shown in About) and what you see.</p>
+            </div>
+
+            <div class="panel glass faq">
+                <details open>
+                    <summary><i class="fa-solid fa-hard-drive" aria-hidden="true"></i><span>Where are my videos and projects kept?</span><i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i></summary>
+                    <div class="answer">
+                        <p>On your device, or on the external drive or folder you choose under <strong>Storage</strong> on the Home screen. There's no account and no cloud copy, so nothing is lost or synced through us.</p>
+                        <p>If the drive is unplugged or full, ClipThat Studio tells you and lets you plug it back in or switch to the device's own storage. Keep a backup of anything important: removing the app removes what's stored on the device.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary><i class="fa-solid fa-closed-captioning" aria-hidden="true"></i><span>Captions don't appear</span><i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i></summary>
+                    <div class="answer">
+                        <p>Captions are transcribed on your device, so the device's speech recognition has to support your language.</p>
+                        <ul>
+                            <li><strong>iPhone, iPad and Mac:</strong> allow Speech Recognition for ClipThat Studio in Settings if you said no earlier. The first time, your device may need a moment to get the language ready.</li>
+                            <li><strong>Android:</strong> if your phone has no on-device speech recognizer, ClipThat Studio offers to download an offline captions model (about 60 MB) once. It needs an internet connection for that download only.</li>
+                        </ul>
+                        <p>Clear speech with little background music gives the best captions.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary><i class="fa-solid fa-video" aria-hidden="true"></i><span>How do I film with a crew?</span><i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i></summary>
+                    <div class="answer">
+                        <p>One device directs and up to four others film. All of them need ClipThat Studio.</p>
+                        <ol>
+                            <li>On the Director's device, tap <strong>Direct a crew</strong>. It shows a QR code.</li>
+                            <li>On each camera, tap <strong>Join a crew</strong> and scan the code.</li>
+                            <li>Allow Local Network (iPhone, iPad and Mac) or Nearby devices (Android) when asked.</li>
+                        </ol>
+                        <p>The devices talk directly over your Wi-Fi, encrypted, never through a server. With no Wi-Fi around, an Android device can make a network for the crew, or an iPhone can share its Personal Hotspot. Takes go straight to the Director's timeline.</p>
+                        <p>Can't connect? Make sure every device is on the same Wi-Fi, and that guest or public networks aren't blocking devices from seeing each other.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary><i class="fa-solid fa-photo-film" aria-hidden="true"></i><span>The Director can't see a camera's videos</span><i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i></summary>
+                    <div class="answer">
+                        <p>The Director can browse videos already on a camera only after the person on that camera taps <strong>Allow</strong>, and only for that connection. If they tapped Don't allow, reconnect and ask again.</p>
+                        <p>The camera also needs photo library access for ClipThat Studio in its Settings. On Android, if only some videos were allowed, the Director sees only those.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i><span>Setting up the AI Director</span><i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i></summary>
+                    <div class="answer">
+                        <p>The AI Director turns your idea into a shot plan. Choose one way to use it:</p>
+                        <ul>
+                            <li><strong>Your own API key</strong> from Anthropic, OpenAI, Google Gemini, OpenRouter, Groq, DeepSeek or another compatible provider. The key stays in your device's Keychain or Keystore, and the provider bills you for what you use.</li>
+                            <li><strong>A chat app:</strong> copy the prompt into Claude, ChatGPT or Gemini, then bring the answer back. No key needed.</li>
+                            <li><strong>Apple Intelligence</strong> on supported iPhone, iPad and Mac, on the device. No key needed.</li>
+                        </ul>
+                        <p>Your idea and plan text go only to the provider you choose, never to us. See the <a href="../privacy/">Privacy Policy</a>.</p>
+                    </div>
+                </details>
+
+                <details>
+                    <summary><i class="fa-solid fa-paper-plane" aria-hidden="true"></i><span>Sending a plan to another device</span><i class="fa-solid fa-chevron-right chev" aria-hidden="true"></i></summary>
+                    <div class="answer">
+                        <p>On the other device, open Plans, tap <strong>⋯</strong> and choose <strong>Receive a plan</strong>. On your device, open the plan and choose <strong>Send to nearby device</strong>, then pick the other device from the list. If it doesn't appear, tap <strong>Scan code</strong> and scan the QR code it shows. Both devices need to be on the same network, and the other person taps Accept.</p>
+                        <p>Plans are sent unencrypted over the local network, so send them only on networks you trust. You can also use <strong>Share plan…</strong> to send the plan as a file, for example with AirDrop or Quick Share.</p>
+                    </div>
+                </details>
+            </div>
+
+            <p class="note">ClipThat Studio is an independent project by SDMV. Read the <a href="../privacy/">Privacy Policy</a> and <a href="../terms/">Terms</a>.</p>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="../../" aria-label="SDMV home"><img src="../../assets/sdmv-logo.png" alt="SDMV" width="89" height="26"></a>
+                <nav aria-label="Footer">
+                    <a href="../../#apps">All SDMV apps</a>
+                    <a href="../">ClipThat Studio</a>
+                    <a href="../privacy/">Privacy Policy</a>
+                    <a href="../terms/">Terms</a>
+                </nav>
+            </div>
+            <div class="footer-legal">
+                <p>© 2026 SDMV. All rights reserved.</p>
+                <p>App Store, iPhone, iPad, Mac, Google Play and Android are trademarks of their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="../clipthat.js"></script>
+</body>
+</html>

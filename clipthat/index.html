@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClipThat Studio - Plan it, film it, edit it | SDMV</title>
+    <meta name="description" content="ClipThat Studio is a video editor for short videos: plan your shots, film with a crew of phones over your own Wi-Fi, then edit with captions, voiceovers, looks and text. Coming soon for iPhone, iPad and Android.">
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#F5F5F7">
+    <meta name="theme-color" media="(prefers-color-scheme: dark)" content="#000000">
+    <link rel="canonical" href="https://sdmv.my.id/clipthat/">
+    <link rel="icon" type="image/png" href="../assets/sdmv-icon-192.png">
+    <link rel="apple-touch-icon" href="../assets/icon-clipthat.png">
+
+    <!-- Apply saved theme before first paint -->
+    <script>
+        (function () {
+            try {
+                var saved = localStorage.getItem('sdmv-theme');
+                if (saved === 'light' || saved === 'dark') document.documentElement.dataset.theme = saved;
+            } catch (e) {}
+        })();
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400..800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="clipthat.css">
+</head>
+<body>
+
+    <!-- Faint ember and shade so the glass has something to refract -->
+    <div class="ambient" aria-hidden="true"></div>
+
+    <header class="nav-wrap">
+        <div class="container">
+            <nav class="nav glass" aria-label="Main">
+                <a href="../" class="nav-logo" aria-label="SDMV home">
+                    <img src="../assets/sdmv-logo.png" alt="SDMV" width="103" height="30">
+                </a>
+                <div class="nav-links">
+                    <a href="../#apps" class="nav-extra">Apps</a>
+                    <a href="./" aria-current="page">ClipThat</a>
+                    <a href="support/">Support</a>
+                    <a href="privacy/" class="nav-extra">Privacy</a>
+                    <a href="terms/" class="nav-extra">Terms</a>
+                    <button type="button" id="theme-toggle" class="theme-toggle" aria-label="Switch theme">
+                        <i class="fa-solid fa-moon" aria-hidden="true"></i>
+                    </button>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main id="top">
+
+        <!-- ================= Intro ================= -->
+        <section class="chapter page-top container">
+            <div class="chapter-head">
+                <span class="app-icon icon-clipthat rise"><img src="../assets/icon-clipthat.png" alt="ClipThat Studio app icon" width="96" height="96"></span>
+                <p class="chapter-name rise" style="--i: 1;">ClipThat Studio</p>
+                <h1 class="rise" style="--i: 1;">Plan it, film it, edit it.</h1>
+                <p class="rise" style="--i: 2;">ClipThat Studio is a video editor for short videos. Plan your shots, film them with a crew of phones over your own Wi-Fi, then edit with captions, voiceovers, looks and text.</p>
+                <div class="btn-row rise" style="--i: 3;">
+                    <a href="support/" class="btn btn-glass">Support</a>
+                </div>
+                <span class="tile-badge rise" style="--i: 3;">Coming soon</span>
+                <p class="chapter-meta rise" style="--i: 4;">iPhone, iPad and Android, plus ClipThat Studio for Mac. English.</p>
+            </div>
+
+            <div class="panel glass">
+                <ul class="features">
+                    <li>
+                        <i class="fa-solid fa-clapperboard" aria-hidden="true"></i>
+                        <div>
+                            <h3>Plans and the AI Director</h3>
+                            <p>Turn an idea into a shot list with the AI provider you choose, then film shot by shot with the plan on screen.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-video" aria-hidden="true"></i>
+                        <div>
+                            <h3>Crew</h3>
+                            <p>One device directs and up to four cameras film, linked directly over your Wi-Fi. Takes land on the Director's timeline.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-closed-captioning" aria-hidden="true"></i>
+                        <div>
+                            <h3>Captions and voiceovers</h3>
+                            <p>Captions are transcribed on your device. Record voiceovers right on the timeline.</p>
+                        </div>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-palette" aria-hidden="true"></i>
+                        <div>
+                            <h3>Looks and text</h3>
+                            <p>28 colour looks, 4 effects, 18 fonts and 22 text styles, with export settings made for Reels.</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="facts glass">
+                <div>
+                    <h4>No account</h4>
+                    <p>No sign-in, no ads, no analytics and no tracking.</p>
+                </div>
+                <div>
+                    <h4>Stays on your device</h4>
+                    <p>Your videos, plans and captions stay on your device or the drive you choose, unless you share them.</p>
+                </div>
+                <div>
+                    <h4>Your own Wi-Fi</h4>
+                    <p>Crew devices talk to each other directly over the local network, never through a server.</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ================= Help and legal ================= -->
+        <section class="section container">
+            <div class="support glass">
+                <div>
+                    <h2>An independent project by SDMV.</h2>
+                    <p>ClipThat Studio is made by SDMV and is not affiliated with Apple, Google or any AI provider. Questions or problems? Write to <a href="mailto:hello@sdmv.my.id">hello@sdmv.my.id</a>.</p>
+                </div>
+                <div class="tip-options">
+                    <a class="tip" href="support/">
+                        <div><strong>Support</strong><span>Storage, captions, Crew and the AI Director</span></div>
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                    <a class="tip" href="privacy/">
+                        <div><strong>Privacy Policy</strong><span>What stays on your device and what doesn't</span></div>
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                    <a class="tip" href="terms/">
+                        <div><strong>Terms</strong><span>Using ClipThat Studio</span></div>
+                        <i class="fa-solid fa-chevron-right" aria-hidden="true"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-top">
+                <a href="../" aria-label="SDMV home"><img src="../assets/sdmv-logo.png" alt="SDMV" width="89" height="26"></a>
+                <nav aria-label="Footer">
+                    <a href="../#apps">All SDMV apps</a>
+                    <a href="support/">Support</a>
+                    <a href="privacy/">Privacy Policy</a>
+                    <a href="terms/">Terms</a>
+                </nav>
+            </div>
+            <div class="footer-legal">
+                <p>© 2026 SDMV. All rights reserved.</p>
+                <p>App Store, iPhone, iPad, Mac, Google Play and Android are trademarks of their respective owners.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="clipthat.js"></script>
+</body>
+</html>
