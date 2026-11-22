@@ -1,0 +1,670 @@
+<!doctype html>
+<html lang="id" data-soon="Segera hadir">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>ClipThat Studio: rencanakan, rekam, edit</title>
+<meta name="description" content="Editor video untuk iPhone, iPad, Android, dan Mac. Subtitle dari suaramu dibuat di perangkatmu, kru kamera ponsel, rencana shot dengan AI, dan timeline sungguhan. Tanpa akun.">
+<link rel="canonical" href="https://sdmv.my.id/clipthat/id/">
+<link rel="alternate" hreflang="en" href="https://sdmv.my.id/clipthat/">
+<link rel="alternate" hreflang="id" href="https://sdmv.my.id/clipthat/id/">
+<link rel="alternate" hreflang="x-default" href="https://sdmv.my.id/clipthat/">
+<meta name="theme-color" content="#07080a">
+<meta name="color-scheme" content="dark">
+<link rel="icon" href="../media/icon-32.png" sizes="32x32" type="image/png">
+<link rel="icon" href="../media/icon-192.png" sizes="192x192" type="image/png">
+<link rel="apple-touch-icon" href="../media/icon-180.png">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="ClipThat Studio">
+<meta property="og:title" content="ClipThat Studio: rencanakan, rekam, edit">
+<meta property="og:description" content="Subtitle dari suaramu, kru kamera ponsel, dan rencana shot dengan AI. Untuk iPhone, iPad, Android, dan Mac.">
+<meta property="og:url" content="https://sdmv.my.id/clipthat/id/">
+<meta property="og:image" content="https://sdmv.my.id/clipthat/media/og-id.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="ClipThat Studio: rencanakan, rekam, edit">
+<meta property="og:locale" content="id_ID">
+<meta property="og:locale:alternate" content="en_US">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="ClipThat Studio: rencanakan, rekam, edit">
+<meta name="twitter:description" content="Subtitle dari suaramu, kru kamera ponsel, dan rencana shot dengan AI. Untuk iPhone, iPad, Android, dan Mac.">
+<meta name="twitter:image" content="https://sdmv.my.id/clipthat/media/og-id.jpg">
+<link rel="preload" href="../fonts/intertight_800.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="preload" href="../media/hero-poster.webp" as="image" type="image/webp" fetchpriority="high">
+<link rel="stylesheet" href="../site.css">
+<script>document.documentElement.classList.add("js")</script>
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "SoftwareApplication",
+  "name": "ClipThat Studio",
+  "applicationCategory": "MultimediaApplication",
+  "operatingSystem": "iOS 26, iPadOS 26, Android 12, macOS 26",
+  "description": "Editor video untuk iPhone, iPad, Android, dan Mac: subtitle dari suaramu dibuat di perangkatmu, kru hingga empat kamera ponsel, rencana shot dengan AI, dan editor timeline. Tanpa akun.",
+  "url": "https://sdmv.my.id/clipthat/id/",
+  "image": "https://sdmv.my.id/clipthat/media/icon-512.png",
+  "screenshot": "https://sdmv.my.id/clipthat/media/og-id.jpg",
+  "inLanguage": "id",
+  "publisher": { "@type": "Organization", "name": "SDMV", "email": "hello@sdmv.my.id", "url": "https://sdmv.my.id/" }
+}
+</script>
+</head>
+<body>
+<a class="skip" href="#main">Langsung ke isi</a>
+
+<svg width="0" height="0" style="position:absolute" aria-hidden="true" focusable="false">
+  <defs>
+    <symbol id="i-phone" viewBox="0 0 24 24"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M10.5 5h3" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-android" viewBox="0 0 24 24"><rect x="4" y="3.5" width="12" height="17" rx="2.4" fill="none" stroke="currentColor" stroke-width="1.6"/><rect x="11" y="8" width="9" height="12.5" rx="2" fill="currentColor" opacity=".9"/><circle cx="15.5" cy="17.6" r=".9" fill="#000"/></symbol>
+    <symbol id="i-laptop" viewBox="0 0 24 24"><rect x="4" y="4.5" width="16" height="11" rx="1.6" fill="none" stroke="currentColor" stroke-width="1.6"/><path d="M2 18.5h20" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/></symbol>
+    <symbol id="i-play" viewBox="0 0 24 24"><path d="M7 4.5v15l13-7.5z" fill="currentColor"/></symbol>
+    <symbol id="i-pause" viewBox="0 0 24 24"><path d="M7 4.5h3.5v15H7zM13.5 4.5H17v15h-3.5z" fill="currentColor"/></symbol>
+    <symbol id="i-close" viewBox="0 0 24 24"><path d="M5 5l14 14M19 5L5 19" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></symbol>
+    <symbol id="i-arrow" viewBox="0 0 24 24"><path d="M5 12h14M13 6l6 6-6 6" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-qr" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3.5" y="3.5" width="6.5" height="6.5" rx="1.2"/><rect x="14" y="3.5" width="6.5" height="6.5" rx="1.2"/><rect x="3.5" y="14" width="6.5" height="6.5" rx="1.2"/></g><path d="M14 14h2.5v2.5H14zM18 18h2.5v2.5H18zM14 18.5h2v2h-2zM18.5 14h2v2h-2z" fill="currentColor"/></symbol>
+    <symbol id="i-rec" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8.5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="currentColor"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linejoin="round"><path d="M3 9l9-5 9 5-9 5z"/><path d="M3 14l9 5 9-5"/></g></symbol>
+    <symbol id="i-devices" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6"><rect x="2.5" y="5" width="12" height="9" rx="1.4"/><rect x="16" y="8" width="5.5" height="11" rx="1.4"/><path d="M5 18h7"/></g></symbol>
+    <symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3c.6 4.2 2.8 6.4 7 7-4.2.6-6.4 2.8-7 7-.6-4.2-2.8-6.4-7-7 4.2-.6 6.4-2.8 7-7zM19 15.5c.25 1.6 1 2.3 2.5 2.5-1.5.25-2.25 1-2.5 2.5-.25-1.5-1-2.25-2.5-2.5 1.5-.2 2.25-.9 2.5-2.5z" fill="currentColor"/></symbol>
+    <symbol id="i-text" viewBox="0 0 24 24"><path d="M5 6.5V5h14v1.5M12 5v14M9 19h6" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round"/></symbol>
+    <symbol id="i-plug" viewBox="0 0 24 24"><path d="M9 3v5M15 3v5M6.5 8h11v3a5.5 5.5 0 0 1-11 0zM12 16.5V21" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></symbol>
+    <symbol id="i-user-off" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="12" cy="8.5" r="3.8"/><path d="M4.5 20c1-3.6 4-5.5 7.5-5.5s6.5 1.9 7.5 5.5"/><path d="M3.5 3.5l17 17"/></g></symbol>
+    <symbol id="i-noads" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="3" y="5" width="18" height="14" rx="2.2"/><path d="M7.5 15l2-6 2 6M8.2 13h2.6M14 9v6h1.4a2.6 3 0 0 0 0-6z"/></g></symbol>
+    <symbol id="i-device" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><rect x="6.5" y="2.5" width="11" height="19" rx="2.6"/><path d="M9.5 12.5l1.8 1.8 3.5-3.6"/></g></symbol>
+    <symbol id="i-wifi" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M3 9.5a13 13 0 0 1 18 0M6 12.8a8.6 8.6 0 0 1 12 0M9 16a4.2 4.2 0 0 1 6 0"/></g><circle cx="12" cy="19" r="1.3" fill="currentColor"/></symbol>
+    <symbol id="i-key" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><circle cx="8" cy="15" r="4.5"/><path d="M11.3 11.7L20 3M16.5 6.5l2.5 2.5M14.5 8.5l2 2"/></g></symbol>
+    <symbol id="i-chart" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"><path d="M4 20V10M10 20V4M16 20v-7M21 20H3"/></g></symbol>
+  </defs>
+</svg>
+
+<div class="grain" aria-hidden="true"></div>
+
+<header class="nav" id="top">
+  <div class="wrap">
+    <a class="brand" href="#top" aria-label="ClipThat Studio, kembali ke atas">
+      <img src="../media/icon-192.png" alt="" width="30" height="30">
+      <span>ClipThat Studio</span>
+    </a>
+    <nav class="nav-links" aria-label="Bagian">
+      <a href="#story">Cara kerja</a>
+      <a href="#captions">Subtitle</a>
+      <a href="#crew">Kru</a>
+      <a href="#ai">AI</a>
+      <a href="#mac">Mac</a>
+      <a href="#pro">Pro</a>
+      <a href="#faq">Tanya jawab</a>
+    </nav>
+    <div class="lang" role="group" aria-label="Bahasa">
+      <a href="../" hreflang="en" lang="en">EN</a>
+      <a href="./" hreflang="id" lang="id" aria-current="true">ID</a>
+    </div>
+    <a class="btn btn-primary" href="#get">Dapatkan</a>
+  </div>
+</header>
+
+<main id="main">
+
+<!-- 1 · Hero -->
+<section class="hero" aria-labelledby="hero-title">
+  <div class="hero-bg" aria-hidden="true"><div class="orb o1"></div><div class="orb o2"></div></div>
+  <div class="wrap">
+    <div class="hero-copy">
+      <p class="eyebrow reveal">Editor video untuk kreator</p>
+      <h1 id="hero-title" class="split">
+        <span class="line">Rencanakan.</span>
+        <span class="line">Rekam.</span>
+        <span class="line"><span class="serif silver">Edit.</span></span>
+      </h1>
+      <p class="lede reveal" style="--delay:.35s">Bicara, dan ucapanmu langsung jadi subtitle, dibuat di perangkatmu sendiri. Rencanakan tiap shot, syuting bareng kru ponsel, lalu edit semuanya di satu tempat.</p>
+      <div class="stores reveal" style="--delay:.45s">
+        <a class="btn btn-primary store-btn is-soon" data-store="appStore" aria-disabled="true">
+          <svg aria-hidden="true"><use href="#i-phone"/></svg>
+          <span class="two"><small><span class="get-tag">Unduh di</span><span class="soon-tag">Segera hadir</span></small><span>App Store</span></span>
+        </a>
+        <a class="btn btn-glass store-btn is-soon" data-store="googlePlay" aria-disabled="true">
+          <svg aria-hidden="true"><use href="#i-android"/></svg>
+          <span class="two"><small><span class="get-tag">Dapatkan di</span><span class="soon-tag">Segera hadir</span></small><span>Google Play</span></span>
+        </a>
+        <a class="btn btn-glass store-btn is-soon" data-store="mac" aria-disabled="true">
+          <svg aria-hidden="true"><use href="#i-laptop"/></svg>
+          <span class="two"><small><span class="get-tag">Unduh gratis</span><span class="soon-tag">Segera hadir</span></small><span>untuk Mac</span></span>
+        </a>
+      </div>
+      <ul class="platforms reveal" style="--delay:.55s" aria-label="Platform">
+        <li>iPhone</li><li>iPad</li><li>Android</li><li>Mac</li>
+      </ul>
+    </div>
+
+    <div class="hero-stage reveal-scale" style="--delay:.2s">
+      <div class="halo" aria-hidden="true"></div>
+      <div class="phone" data-parallax="-0.06">
+        <div class="screen">
+          <video id="hero-video" muted loop playsinline preload="none" poster="../media/hero-poster.webp" width="720" height="1564" aria-label="ClipThat Studio dipakai: rencana, kru ponsel, dan editor">
+            <source src="../media/hero.webm" type="video/webm">
+            <source src="../media/hero.mp4" type="video/mp4">
+          </video>
+          <div class="glare"></div>
+        </div>
+        <button class="media-toggle" type="button" aria-pressed="true" aria-controls="hero-video" aria-label="Jeda video" data-label-play="Putar video" data-label-pause="Jeda video">
+          <svg class="i-pause" aria-hidden="true"><use href="#i-pause"/></svg>
+          <svg class="i-play" aria-hidden="true"><use href="#i-play"/></svg>
+        </button>
+      </div>
+      <div class="float glass f1" data-parallax="0.1" aria-hidden="true"><small>Subtitle</small>Dibuat di perangkatmu</div>
+      <div class="float glass f2" data-parallax="0.18" aria-hidden="true"><small>Kru · 4 kamera</small><span class="chip rec" style="padding:0;border:0;background:none"><span class="dot"></span>Kamera B · REC</span></div>
+      <div class="float glass f3" data-parallax="0.05" aria-hidden="true"><small>Ekspor</small>−14 LUFS<span class="meter"><i></i><i></i><i></i><i></i><i></i><i></i></span></div>
+    </div>
+  </div>
+  <a class="scroll-cue" href="#story" aria-label="Gulir ke cara kerja"></a>
+</section>
+
+<!-- Facts -->
+<section class="facts" aria-label="Sekilas">
+  <div class="wrap">
+    <ul>
+      <li class="reveal"><b class="silver">4</b><span>kamera ponsel dalam satu kru, dengan satu Sutradara</span></li>
+      <li class="reveal" style="--delay:.08s"><b class="silver">5</b><span>gaya subtitle, dibuat dari suaramu di perangkat</span></li>
+      <li class="reveal" style="--delay:.16s"><b class="silver">28</b><span>filter warna, plus 4 efek dan 22 gaya teks</span></li>
+      <li class="reveal" style="--delay:.24s"><b class="silver">0</b><span>akun yang harus dibuat, iklan yang harus ditonton</span></li>
+    </ul>
+  </div>
+</section>
+
+<!-- 2 · Story -->
+<section class="section story" id="story" aria-labelledby="story-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">Cara kerja</p>
+      <h2 id="story-title" class="h2 split">Satu ide. Satu aplikasi. <span class="serif silver">Seluruh</span> kru filmmu.</h2>
+    </div>
+    <div class="grid">
+      <div class="story-steps">
+        <article class="beat" data-screen="0" data-step="plan">
+          <p class="step-label"><b>1</b>Rencanakan</p>
+          <h3>Tiap shot, sudah terpetakan.</h3>
+          <p>Ceritakan video yang ingin kamu buat. Sutradara AI menyusunnya jadi rencana shot: framing, gerakan, durasi, dan naskah.</p>
+          <ul class="ticks">
+            <li>Pakai asisten chat AI apa saja: aplikasi menulis prompt-nya, kamu tempel balasannya.</li>
+            <li>Atau pakai kunci API Anthropic atau yang kompatibel dengan OpenAI, atau model AI Apple di perangkat.</li>
+          </ul>
+          <div class="inline-phone"><div class="phone"><div class="screen"><img src="../media/screens/ai-plan.webp" alt="Rencana shot dari Sutradara AI untuk video pasta bawang putih: Sizzle, Ingredients, Boil, dan Toss, masing-masing dengan framing dan durasi" width="780" height="1695" loading="lazy" decoding="async"><div class="glare"></div></div></div></div>
+        </article>
+        <article class="beat" data-screen="1" data-step="plan">
+          <p class="step-label"><b>1</b>Rencanakan</p>
+          <h3>Storyboard yang bisa diputar.</h3>
+          <p>Rencana adalah storyboard yang tersimpan terpisah dari proyekmu. Mulai dari jenis video, sketsa shot yang kamu mau, rekam sulih suara untuk tiap shot, lalu putar rencananya seperti video.</p>
+          <ul class="ticks">
+            <li>Tampilan Papan dan Daftar, plus editor shot untuk tiap detail.</li>
+            <li>Kirim rencana sebagai file, atau lewat Wi-Fi ke perangkat terdekat.</li>
+          </ul>
+          <div class="inline-phone"><div class="phone"><div class="screen"><img src="../media/screens/plans-board.webp" alt="Rencana di tampilan Papan: kartu shot dengan gambar, judul, dan durasi" width="780" height="1695" loading="lazy" decoding="async"><div class="glare"></div></div></div></div>
+        </article>
+        <article class="beat" data-screen="2" data-step="film">
+          <p class="step-label"><b>2</b>Rekam</p>
+          <h3>Rekam shot demi shot.</h3>
+          <p>Kamera kartu shot menunjukkan apa yang perlu direkam berikutnya, dengan arahan langsung, dan tiap take masuk ke tempat yang tepat di rencanamu.</p>
+          <div class="inline-phone"><div class="phone"><div class="screen"><img src="../media/screens/crew-camera.webp" alt="Kamera dengan kartu shot: kamu kamera B, close-up tangan, shot 3 dari 4" width="780" height="1695" loading="lazy" decoding="async"><div class="glare"></div></div></div></div>
+        </article>
+        <article class="beat" data-screen="3" data-step="film">
+          <p class="step-label"><b>2</b>Rekam</p>
+          <h3>Roll semua kamera dari satu tempat.</h3>
+          <p>Ponsel teman-teman jadi kru kameramu. Sutradara melihat semua kamera secara langsung, me-roll dan cut semuanya dengan pengaturan yang sama, dan take dikirim dalam kualitas asli.</p>
+          <div class="inline-phone"><div class="phone"><div class="screen"><img src="../media/screens/crew.webp" alt="Layar kru Sutradara: empat tampilan kamera, A sampai D, dan tombol Roll all cameras" width="780" height="1695" loading="lazy" decoding="async"><div class="glare"></div></div></div></div>
+        </article>
+        <article class="beat" data-screen="4" data-step="edit">
+          <p class="step-label"><b>3</b>Edit</p>
+          <h3>Timeline sungguhan di sakumu.</h3>
+          <p>Pangkas, pisah, dan susun ulang. Tumpuk lapisan video, foto, musik, suara, dan sulih suara sebanyak yang kamu perlu. Setiap perubahan tersimpan otomatis, dan semua langkah bisa di-undo.</p>
+          <ul class="ticks">
+            <li>Take kru tersusun sebagai multicam yang sinkron.</li>
+            <li>Pratinjau sosial menunjukkan area yang tertutup tombol Reels, TikTok, dan Shorts.</li>
+          </ul>
+          <div class="inline-phone"><div class="phone"><div class="screen"><img src="../media/screens/editor.webp" alt="Editor: klip jalan saat matahari terbenam, tombol putar, dan timeline dengan baris kamera A sampai D" width="780" height="1695" loading="lazy" decoding="async"><div class="glare"></div></div></div></div>
+        </article>
+        <article class="beat" data-screen="5" data-step="edit">
+          <p class="step-label"><b>3</b>Edit</p>
+          <h3>Siap untuk Reels.</h3>
+          <p>Subtitle dari suaramu, sulih suara setelah hitungan mundur, filter, dan teks. Ekspor ke galeri dengan pengaturan untuk Reels, TikTok, dan Shorts, dengan subtitle dan teks menyatu di video.</p>
+          <div class="inline-phone"><div class="phone"><div class="screen"><img src="../media/screens/captions.webp" alt="Alat subtitle: Auto captions, Polish with AI, Translate, dan daftar baris dengan waktunya" width="780" height="1695" loading="lazy" decoding="async"><div class="glare"></div></div></div></div>
+        </article>
+      </div>
+
+      <div class="story-stage" aria-hidden="true">
+        <ol class="story-rail">
+          <li data-step="plan" class="is-on">Rencanakan</li>
+          <li data-step="film">Rekam</li>
+          <li data-step="edit">Edit</li>
+        </ol>
+        <div class="phone">
+          <div class="screen">
+            <img class="is-on" src="../media/screens/ai-plan.webp" alt="" width="780" height="1695" loading="lazy" decoding="async">
+            <img src="../media/screens/plans-board.webp" alt="" width="780" height="1695" loading="lazy" decoding="async">
+            <img src="../media/screens/crew-camera.webp" alt="" width="780" height="1695" loading="lazy" decoding="async">
+            <img src="../media/screens/crew.webp" alt="" width="780" height="1695" loading="lazy" decoding="async">
+            <img src="../media/screens/editor.webp" alt="" width="780" height="1695" loading="lazy" decoding="async">
+            <img src="../media/screens/captions.webp" alt="" width="780" height="1695" loading="lazy" decoding="async">
+            <div class="glare"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 3 · Captions -->
+<section class="section captions" id="captions" aria-labelledby="captions-title">
+  <div class="wrap">
+    <div class="grid">
+      <div class="cap-stage reveal-scale">
+        <div class="phone">
+          <div class="screen">
+            <img src="../media/stills/crew-kitchen-wide.webp" alt="" width="900" height="1600" loading="lazy" decoding="async">
+            <div class="shade"></div>
+            <p class="cap-line" id="cap-line" data-look="highlight" data-words="Bawang putih masuk minyak panas, lalu cabainya." aria-hidden="true"></p>
+            <div class="glare"></div>
+          </div>
+        </div>
+      </div>
+      <div>
+        <p class="eyebrow reveal">Subtitle</p>
+        <h2 id="captions-title" class="h2 split">Ucapanmu, <span class="serif silver">kata</span> demi kata.</h2>
+        <p class="lede reveal" style="margin-top:26px">Bicara, dan ucapanmu jadi subtitle. Semuanya dibuat dari suaramu di perangkat, dalam Bahasa Indonesia dan Inggris, jadi suaramu tidak pernah dikirim ke cloud.</p>
+        <div class="looks-picker reveal" role="group" aria-label="Coba gaya subtitle">
+          <button type="button" data-look="clean" aria-pressed="false">Clean</button>
+          <button type="button" data-look="boxed" aria-pressed="false">Boxed</button>
+          <button type="button" data-look="pop" aria-pressed="false">Pop</button>
+          <button type="button" data-look="highlight" aria-pressed="true">Highlight<span class="pro-badge">PRO</span></button>
+          <button type="button" data-look="spotlight" aria-pressed="false">Spotlight<span class="pro-badge">PRO</span></button>
+        </div>
+        <p class="demo-note reveal">Gambaran lima gaya subtitle, digambar oleh browsermu. Highlight dan Spotlight mengikuti ucapanmu kata per kata.</p>
+        <div class="feature-list">
+          <div class="reveal"><h3>Sulih suara, lalu subtitle</h3><p>Rekam setelah hitungan mundur, lalu buat subtitle-nya dengan satu ketukan.</p></div>
+          <div class="reveal" style="--delay:.08s"><h3>Rapikan dan terjemahkan</h3><p>Rapikan subtitle atau terjemahkan antara Bahasa Indonesia dan Inggris, dengan kunci AI milikmu.</p></div>
+          <div class="reveal" style="--delay:.16s"><h3>Tiap baris bisa diubah</h3><p>Perbaiki kata mana pun dan waktunya di daftar subtitle.</p></div>
+          <div class="reveal" style="--delay:.24s"><h3>Menyatu saat ekspor</h3><p>Subtitle dan teks masuk ke video, siap diunggah ke mana saja.</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 4 · Crew -->
+<section class="section crew" id="crew" aria-labelledby="crew-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow reveal">Kru</p>
+      <h2 id="crew-title" class="h2 split">Syuting <span class="serif silver">bareng kru.</span></h2>
+      <p class="lede reveal">Satu Sutradara dan hingga empat kamera ponsel di jaringan lokalmu. Roll dan cut semua kamera dari satu tempat, dan take-nya langsung masuk ke timeline Sutradara sebagai multicam yang sinkron.</p>
+    </div>
+
+    <div class="crew-visual">
+      <div class="col left">
+        <div class="cam glass reveal"><div class="thumb"><img src="../media/screens/crew.webp" alt="" width="780" height="1695" loading="lazy" decoding="async" style="--mx:-9%;--my:-79%"><span class="letter">A</span></div><div><b>Wide master</b><span>iPhone</span></div><i class="link"></i></div>
+        <div class="cam glass reveal" style="--delay:.1s"><div class="thumb"><img src="../media/screens/crew.webp" alt="" width="780" height="1695" loading="lazy" decoding="async" style="--mx:-9%;--my:-220%"><span class="letter">C</span></div><div><b>Overhead</b><span>iPad</span></div><i class="link"></i></div>
+      </div>
+      <div class="director reveal-scale">
+        <div class="tablet"><div class="screen"><img src="../media/screens/ipad-crew.webp" alt="Monitor kru di iPad: empat tampilan kamera langsung dengan baterai, penyimpanan, dan status rekam" width="1200" height="1600" loading="lazy" decoding="async"></div></div>
+        <span class="chip"><span class="dot"></span>Sutradara · iPhone, iPad, Android, atau Mac</span>
+      </div>
+      <div class="col right">
+        <div class="cam glass reveal" style="--delay:.05s"><div class="thumb"><img src="../media/screens/crew.webp" alt="" width="780" height="1695" loading="lazy" decoding="async" style="--mx:-116%;--my:-79%"><span class="letter">B</span></div><div><b>Close-up wajan</b><span>Ponsel Android</span></div><i class="link"></i></div>
+        <div class="cam glass reveal" style="--delay:.15s"><div class="thumb"><img src="../media/screens/crew.webp" alt="" width="780" height="1695" loading="lazy" decoding="async" style="--mx:-116%;--my:-220%"><span class="letter">D</span></div><div><b>Close-up aduk</b><span>Ponsel Android</span></div><i class="link"></i></div>
+      </div>
+    </div>
+
+    <div class="cards">
+      <div class="card glass reveal"><div class="ic"><svg aria-hidden="true"><use href="#i-qr"/></svg></div><h3>Pindai untuk gabung</h3><p>Kamera tersambung dengan memindai kode QR Sutradara. Tanpa akun, tanpa kabel.</p></div>
+      <div class="card glass reveal" style="--delay:.08s"><div class="ic"><svg aria-hidden="true"><use href="#i-rec"/></svg></div><h3>Roll dan cut bersamaan</h3><p>Mulai dan hentikan semua kamera dari Sutradara, dengan pengaturan yang sama di semuanya.</p></div>
+      <div class="card glass reveal" style="--delay:.16s"><div class="ic"><svg aria-hidden="true"><use href="#i-layers"/></svg></div><h3>Take langsung sinkron</h3><p>Take dikirim dalam kualitas asli dan tersusun sebagai multicam yang sinkron.</p></div>
+      <div class="card glass reveal" style="--delay:.24s"><div class="ic"><svg aria-hidden="true"><use href="#i-devices"/></svg></div><h3>Perangkat apa saja</h3><p>iPhone, iPad, dan Android bisa satu kru. Mac bisa jadi Sutradara.</p></div>
+    </div>
+    <p class="free-pro-note reveal">Gratis: satu Sutradara dan satu kamera. Dengan Pro: hingga empat kamera. Kamera selalu gabung gratis.</p>
+  </div>
+</section>
+
+<!-- 5 · Looks and text -->
+<section class="section looks" id="looks" aria-labelledby="looks-title">
+  <div class="wrap">
+    <div class="section-head">
+      <p class="eyebrow reveal">Filter dan teks</p>
+      <h2 id="looks-title" class="h2 split">Bikin hasilnya <span class="serif silver">kelihatan jadi.</span></h2>
+      <p class="lede reveal">Filter warna, efek, font, gaya dan animasi teks, paket efek suara, dan ekspor yang suaranya cukup keras. Semuanya gratis.</p>
+    </div>
+
+    <div class="bento">
+      <div class="tile glass t-looks reveal">
+        <div class="copy">
+          <div class="big silver">28</div>
+          <h3>filter warna</h3>
+          <p>Filter untuk wajah, makanan, travel, dan malam hari, dari Clear Skin dan Golden Hour sampai Neo Noir. Plus 12 filter Classic.</p>
+        </div>
+        <div class="shot"><img src="../media/screens/mac-looks.webp" alt="Daftar filter di ClipThat Studio, tiap filter ditampilkan di klip" width="1800" height="1125" loading="lazy" decoding="async"></div>
+        <div class="look-names" aria-hidden="true">
+          <div class="track">
+            <span class="chip">Clear Skin</span><span class="chip">Glow</span><span class="chip">Fresh</span><span class="chip">Golden Skin</span><span class="chip">Peachy</span><span class="chip">Pop</span><span class="chip">Studio</span><span class="chip">Night Glow</span><span class="chip">Clean Bright</span><span class="chip">Crisp</span><span class="chip">Golden Hour</span><span class="chip">Honey</span><span class="chip">Teal &amp; Orange</span><span class="chip">Blockbuster</span><span class="chip">Neo Noir</span><span class="chip">Moody</span><span class="chip">Overcast</span><span class="chip">Forest</span><span class="chip">Faded Film</span><span class="chip">Warm Film</span><span class="chip">Cool Film</span><span class="chip">Expired</span><span class="chip">Crisp B&amp;W</span><span class="chip">Soft Matte B&amp;W</span><span class="chip">High-Contrast Noir</span><span class="chip">Pastel</span><span class="chip">Cyber Neon</span><span class="chip">Vintage Postcard</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tile glass t-anim reveal" style="--delay:.08s">
+        <h3>Teks yang bergerak</h3>
+        <p>Animasi masuk dan keluar untuk tiap teks, masing-masing 0,1 sampai 0,6 detik.</p>
+        <div class="anim-demo" aria-hidden="true"><div class="anim-word" id="anim-word">Tunggu <span class="serif">dulu</span></div></div>
+        <div class="anim-name" aria-hidden="true"><span>Animasi</span><b id="anim-name">Pop</b></div>
+        <p class="sr-only">Animasi: fade, pop, zoom, rise, drop, slide left, slide right, wipe, dan type on.</p>
+      </div>
+
+      <div class="tile glass t-fonts reveal">
+        <h3>18 font · 22 gaya teks</h3>
+        <p>Judul, label, dan hook dengan gaya yang tetap terbaca di layar kecil.</p>
+        <div class="font-specimens" aria-hidden="true"><span class="s1">Aa</span><span class="s2">Aa</span><span class="s3">Aa</span><span class="s4">Aa</span></div>
+      </div>
+
+      <div class="tile glass t-fx reveal" style="--delay:.08s">
+        <h3>4 efek</h3>
+        <p>Tambahkan ke filter mana pun, atau biarkan filternya yang memilih.</p>
+        <div class="fx-chips"><span class="chip">Bloom</span><span class="chip">Grain</span><span class="chip">Vignette</span><span class="chip">Smooth skin</span></div>
+      </div>
+
+      <div class="tile glass t-sfx reveal" style="--delay:.16s">
+        <h3>30 efek suara</h3>
+        <p>Paket buatan kami sendiri, untuk video pendek. Tambahkan di posisi playhead.</p>
+        <div class="sfx-bars" aria-hidden="true"></div>
+        <p class="sfx-names" aria-hidden="true">whoosh · pop · riser · boom · shutter · typing · sparkle · ding</p>
+      </div>
+
+      <div class="tile glass t-loud reveal">
+        <h3>Selalu cukup keras</h3>
+        <div class="loud-meter" aria-hidden="true">
+          <div class="target"><b class="silver">−14</b><span>LUFS saat ekspor</span></div>
+          <div class="scale"><div class="fill"></div></div>
+          <div class="marks"><span>−30</span><span>−20</span><span>−14</span><span>0</span></div>
+        </div>
+        <p>Setiap ekspor menaikkan audio yang pelan ke −14 LUFS, maksimal 12 dB, dengan limiter supaya tidak pecah. Audio yang sudah keras dibiarkan apa adanya.</p>
+      </div>
+
+      <div class="tile glass t-format reveal" style="--delay:.08s">
+        <h3>Semua format, framing ulang</h3>
+        <div class="formats" aria-hidden="true">
+          <figure><div class="fr r916"></div><figcaption>9:16</figcaption></figure>
+          <figure><div class="fr r169"></div><figcaption>16:9</figcaption></figure>
+          <figure><div class="fr r11"></div><figcaption>1:1</figcaption></figure>
+          <figure><div class="fr r45"></div><figcaption>4:5</figcaption></figure>
+        </div>
+        <p>Ganti format kapan saja. Atur ulang framing tiap klip dengan keyframe, atau biarkan Auto reframe melakukannya untuk semua klip.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 · AI -->
+<section class="section ai" id="ai" aria-labelledby="ai-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow reveal">AI, sesuai caramu</p>
+      <h2 id="ai-title" class="h2 split">AI-mu. Kunci <span class="serif silver">milikmu.</span></h2>
+      <p class="lede reveal">ClipThat Studio bekerja dengan AI yang sudah kamu pakai: kunci API milikmu, atau akun Claude milikmu di Mac. Tidak perlu akun di kami.</p>
+    </div>
+
+    <div class="grid">
+      <div class="card glass wide reveal">
+        <div>
+          <div class="ic"><svg aria-hidden="true"><use href="#i-spark"/></svg></div>
+          <h3>AI Editor: tinggal minta, <span class="serif">Claude yang edit.</span></h3>
+          <p>Bilang saja maumu: "Jadikan sekitar 30 detik dan tambahkan judul hook." AI membaca proyekmu, mengedit timeline sambil kamu tonton, dan tiap langkah bisa di-undo.</p>
+          <ul class="ticks">
+            <li>Di Mac: Claude Code milikmu berjalan di dalam aplikasi, dengan akun Claude milikmu.</li>
+            <li>Di iPhone, iPad, dan Android: memakai kunci API Claude milikmu (Pro).</li>
+          </ul>
+        </div>
+        <div class="terminal" aria-label="Contoh obrolan AI Editor">
+          <div class="bar"><i></i><i></i><i></i><span>AI Editor</span></div>
+          <pre id="term"><span class="ln"><span class="p">›</span> Jadikan sekitar 30 detik dan tambahkan judul hook</span><span class="ln"><span class="c">  Membaca proyek…</span></span><span class="ln"><span class="ok">✓</span> Klip 2 dipangkas jadi 3,4 dtk</span><span class="ln"><span class="ok">✓</span> 1 item dikeluarkan dari timeline</span><span class="ln"><span class="ok">✓</span> Teks "Tunggu dulu…" ditambahkan di 0:01</span><span class="ln"><span class="ok">✓</span> Filter: Golden Hour</span><span class="ln"><span class="c">  Selesai. Sekarang 0:29. Mau sekalian subtitle?</span></span><span class="ln"><span class="p">›</span> Boleh, pakai gaya yang tebal <span class="caret"></span></span></pre>
+        </div>
+      </div>
+
+      <div class="card glass reveal">
+        <div class="ic"><svg aria-hidden="true"><use href="#i-layers"/></svg></div>
+        <h3>AI Director</h3>
+        <p>Ceritakan videonya. Dapatkan rencana shot yang bisa direkam satu per satu.</p>
+        <ul class="ticks">
+          <li>Asisten chat AI apa saja, dengan salin dan tempel</li>
+          <li>Kunci API Anthropic atau yang kompatibel dengan OpenAI</li>
+          <li>Model AI Apple di perangkat yang didukung (khusus Bahasa Inggris)</li>
+        </ul>
+        <div class="where"><span class="chip">Gratis</span><span class="chip">Semua perangkat</span></div>
+      </div>
+
+      <div class="card glass reveal" style="--delay:.08s">
+        <div class="ic"><svg aria-hidden="true"><use href="#i-text"/></svg></div>
+        <h3>Bantuan AI</h3>
+        <p>Bantuan di bagian yang menghemat waktumu, dengan kunci AI milikmu.</p>
+        <ul class="ticks">
+          <li>Teks unggahan: caption, hashtag, dan judul</li>
+          <li>Rapikan dan terjemahkan subtitle; ide teks untuk hook</li>
+          <li>Tinjau editanku dan Rough cut pintar <span class="pro-badge">PRO</span></li>
+        </ul>
+        <div class="where"><span class="chip">Kunci milikmu</span><span class="chip">Hanya teks, kecuali kamu izinkan frame diam</span></div>
+      </div>
+
+      <div class="card glass wide reveal">
+        <div>
+          <div class="ic"><svg aria-hidden="true"><use href="#i-plug"/></svg></div>
+          <h3>Edit dari agent-mu</h3>
+          <p>Sambungkan Claude Code, Codex, Antigravity, atau agent MCP lain dan tonton ia mengedit secara langsung: di aplikasi Mac, atau di ponselmu lewat Wi-Fi (Pro). Tiap perubahan jadi satu langkah undo, dengan nama agent yang membuatnya.</p>
+        </div>
+        <div class="agent-phone"><div class="phone"><div class="screen"><img src="../media/screens/connect-computer.webp" alt="Pengaturan, Connect to a computer: izinkan komputer mengedit, alamat di Wi-Fi, dan baris untuk menambahkannya ke Claude Code" width="780" height="1695" loading="lazy" decoding="async"><div class="glare"></div></div></div></div>
+      </div>
+    </div>
+
+    <div class="key-line reveal">
+      <span class="chip"><svg width="15" height="15" aria-hidden="true"><use href="#i-user-off"/></svg>Tanpa akun di kami</span>
+      <span class="chip"><svg width="15" height="15" aria-hidden="true"><use href="#i-key"/></svg>Kunci tetap di Keychain atau Keystore</span>
+      <span class="chip"><svg width="15" height="15" aria-hidden="true"><use href="#i-device"/></svg>Hanya ke layanan pilihanmu</span>
+    </div>
+  </div>
+</section>
+
+<!-- 7 · Mac -->
+<section class="section mac" id="mac" aria-labelledby="mac-title">
+  <div class="wrap">
+    <div class="section-head center">
+      <p class="eyebrow reveal">ClipThat Studio untuk Mac</p>
+      <h2 id="mac-title" class="h2 split">Layar besar. <span class="serif silver">Gratis.</span></h2>
+      <p class="lede reveal">Aplikasi Mac asli dengan proyek, rencana, dan filter yang sama. Mac tidak merekam, jadi ia yang mengarahkan: pimpin kru dari Mac-mu, lalu edit bareng Claude di samping timeline.</p>
+    </div>
+    <div class="mac-stage reveal-scale">
+      <div class="laptop" data-tilt>
+        <div class="lid"><div class="screen"><img src="../media/screens/mac-ai-chat.webp" alt="ClipThat Studio di Mac: editor dengan obrolan AI Editor, tiap langkah dengan Undo back to here" width="1800" height="1125" loading="lazy" decoding="async"></div></div>
+        <div class="base"></div>
+      </div>
+    </div>
+    <div class="mac-grid">
+      <div class="card glass reveal"><div class="ic"><svg aria-hidden="true"><use href="#i-rec"/></svg></div><h3>Sutradara kru</h3><p>Lihat semua kamera secara langsung, roll dan cut, dan take-nya masuk ke proyekmu.</p></div>
+      <div class="card glass reveal" style="--delay:.08s"><div class="ic"><svg aria-hidden="true"><use href="#i-spark"/></svg></div><h3>AI Editor</h3><p>Claude Code milikmu, di dalam aplikasi, masuk dengan akunmu sendiri.</p></div>
+      <div class="card glass reveal" style="--delay:.16s"><div class="ic"><svg aria-hidden="true"><use href="#i-devices"/></svg></div><h3>File yang sama</h3><p>Buka proyek dan rencana dari ponselmu, dan simpan media di drive eksternal.</p></div>
+      <div class="card glass reveal" style="--delay:.24s"><div class="ic"><svg aria-hidden="true"><use href="#i-key"/></svg></div><h3>Semua sudah termasuk</h3><p>Semua fitur Pro gratis di Mac. Untuk macOS 26 atau lebih baru.</p></div>
+    </div>
+    <div class="mac-cta reveal">
+      <a class="btn btn-primary store-btn is-soon" data-store="mac" aria-disabled="true">
+        <svg aria-hidden="true"><use href="#i-laptop"/></svg>
+        <span class="two"><small><span class="get-tag">Unduh gratis</span><span class="soon-tag">Segera hadir</span></small><span>untuk Mac</span></span>
+      </a>
+      <button class="btn btn-glass" type="button" data-dialog="mac-trailer"><svg aria-hidden="true"><use href="#i-play"/></svg>Tonton trailer Mac</button>
+    </div>
+  </div>
+</section>
+
+<!-- 8 · Pro -->
+<section class="section pro" id="pro" aria-labelledby="pro-title">
+  <div class="wrap">
+    <div class="pro-card glass reveal">
+      <div class="left">
+        <p class="eyebrow">ClipThat Studio Pro</p>
+        <h2 id="pro-title" class="h2">Bayar sekali. <span class="serif silver">Punya selamanya.</span></h2>
+        <p class="lede">Sekali beli untuk membuka lebih banyak fitur dan mendukung aplikasi independen. Tanpa langganan, tanpa akun. Harganya sesuai yang tertera di toko aplikasimu.</p>
+        <p class="free-line">Cukup beli sekali di perangkat Sutradara; kamera bergabung gratis. Pro menampilkan lencana PRO di aplikasi. Di Mac, semuanya gratis.</p>
+        <div class="stores">
+          <a class="btn btn-primary store-btn is-soon" data-store="appStore" aria-disabled="true">
+            <svg aria-hidden="true"><use href="#i-phone"/></svg>
+            <span class="two"><small><span class="get-tag">Unduh di</span><span class="soon-tag">Segera hadir</span></small><span>App Store</span></span>
+          </a>
+          <a class="btn btn-glass store-btn is-soon" data-store="googlePlay" aria-disabled="true">
+            <svg aria-hidden="true"><use href="#i-android"/></svg>
+            <span class="two"><small><span class="get-tag">Dapatkan di</span><span class="soon-tag">Segera hadir</span></small><span>Google Play</span></span>
+          </a>
+        </div>
+      </div>
+      <div class="right">
+        <table class="pro-table">
+          <caption class="sr-only">Yang gratis dan yang ditambahkan Pro</caption>
+          <thead><tr><th scope="col"><span class="sr-only">Fitur</span></th><th scope="col">Gratis</th><th scope="col">Pro</th></tr></thead>
+          <tbody>
+            <tr><th scope="row">Kamera kru</th><td>1</td><td class="p">Hingga 4, multicam sinkron</td></tr>
+            <tr><th scope="row">Gaya subtitle</th><td>Clean, Boxed, Pop</td><td class="p">+ Highlight, Spotlight</td></tr>
+            <tr><th scope="row">Jenis video untuk rencana</th><td>4</td><td class="p">Semua 12</td></tr>
+            <tr><th scope="row">Sempurnakan rencana dengan AI</th><td>–</td><td class="p">Termasuk</td></tr>
+            <tr><th scope="row">Tinjau editanku, Rough cut pintar</th><td>–</td><td class="p">Dengan kunci AI-mu</td></tr>
+            <tr><th scope="row">AI Editor di iPhone, iPad, Android</th><td>–</td><td class="p">Dengan kunci Claude-mu</td></tr>
+            <tr><th scope="row">Sambungkan agent lewat Wi-Fi</th><td>–</td><td class="p">Termasuk</td></tr>
+            <tr><th scope="row">Gambar AI untuk shot</th><td>–</td><td class="p">Dengan Apple Intelligence</td></tr>
+          </tbody>
+        </table>
+        <p class="always-free"><b>Selalu gratis, tanpa watermark:</b> editor, ekspor kualitas penuh, subtitle, sulih suara, rencana, Sutradara AI, filter, efek, font, gaya teks, kirim rencana, dan simpan media di drive eksternal.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 9 · Privacy -->
+<section class="section privacy" id="privacy" aria-labelledby="privacy-title">
+  <div class="wrap">
+    <p class="eyebrow reveal" style="display:flex;justify-content:center">Privat sejak awal</p>
+    <h2 id="privacy-title" class="big-quote split">Videomu <span class="serif silver">tetap milikmu.</span></h2>
+    <ul class="priv-grid">
+      <li class="reveal"><svg aria-hidden="true"><use href="#i-user-off"/></svg><h3>Tanpa akun</h3><p>Tidak perlu daftar, tidak perlu login.</p></li>
+      <li class="reveal" style="--delay:.06s"><svg aria-hidden="true"><use href="#i-noads"/></svg><h3>Tanpa iklan</h3><p>Tanpa iklan dan tanpa watermark, gratis maupun Pro.</p></li>
+      <li class="reveal" style="--delay:.12s"><svg aria-hidden="true"><use href="#i-device"/></svg><h3>Di perangkatmu</h3><p>Subtitle dibuat di perangkat. Mediamu tetap di sana, atau di drive milikmu.</p></li>
+      <li class="reveal"><svg aria-hidden="true"><use href="#i-wifi"/></svg><h3>Kru tetap lokal</h3><p>Kamera dan Sutradara terhubung lewat jaringan lokalmu, langsung antarperangkat.</p></li>
+      <li class="reveal" style="--delay:.06s"><svg aria-hidden="true"><use href="#i-key"/></svg><h3>AI sesuai aturanmu</h3><p>Fitur AI hanya mengirim teks, tidak pernah video atau audio, dan hanya ke layanan pilihanmu. Frame diam hanya jika kamu izinkan.</p></li>
+      <li class="reveal" style="--delay:.12s"><svg aria-hidden="true"><use href="#i-chart"/></svg><h3>Laporan bisa dimatikan</h3><p>Laporan penggunaan dan crash anonim tidak pernah berisi video, audio, subtitle, atau rencanamu. Bisa dimatikan kapan saja.</p></li>
+    </ul>
+    <p class="priv-more reveal"><a class="text-link" href="../privacy/">Baca kebijakan privasi <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a></p>
+  </div>
+</section>
+
+<!-- 10 · Trailer -->
+<section class="section trailer" id="trailer" aria-labelledby="trailer-title">
+  <div class="wrap">
+    <div>
+      <p class="eyebrow reveal">Trailer</p>
+      <h2 id="trailer-title" class="h2 split">Lihat <span class="serif silver">aksinya.</span></h2>
+      <p class="lede reveal" style="margin-top:26px">Rencanakan, rekam, dan edit, dari awal sampai jadi dalam semenit. Nyalakan suaranya.</p>
+      <p class="reveal" style="margin-top:30px"><button class="text-link" type="button" data-dialog="mac-trailer" style="background:none;border-top:0;border-left:0;border-right:0;cursor:pointer">Tonton trailer Mac <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></button></p>
+    </div>
+    <div class="player reveal-scale" id="trailer-player">
+      <div class="phone">
+        <div class="screen">
+          <video id="trailer-video" playsinline preload="none" data-poster="../media/trailer-id-poster.webp" width="1080" height="1920" data-src="../media/trailer-id.mp4" aria-label="Trailer ClipThat Studio"></video>
+          <button class="play-btn" type="button" aria-label="Putar trailer dengan suara">
+            <span class="disc"><svg aria-hidden="true"><use href="#i-play"/></svg></span>
+            <span class="lbl" aria-hidden="true">Putar dengan suara</span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 11 · Get it + FAQ -->
+<section class="section get" id="get" aria-labelledby="get-title">
+  <div class="wrap">
+    <div class="cta-card glass reveal">
+      <img class="icon" src="../media/icon-192.png" alt="Ikon aplikasi ClipThat Studio" width="96" height="96" loading="lazy">
+      <h2 id="get-title" class="h2">Wujudkan video <span class="serif silver">rencanamu.</span></h2>
+      <div class="stores">
+        <a class="btn btn-primary store-btn is-soon" data-store="appStore" aria-disabled="true">
+          <svg aria-hidden="true"><use href="#i-phone"/></svg>
+          <span class="two"><small><span class="get-tag">Unduh di</span><span class="soon-tag">Segera hadir</span></small><span>App Store</span></span>
+        </a>
+        <a class="btn btn-glass store-btn is-soon" data-store="googlePlay" aria-disabled="true">
+          <svg aria-hidden="true"><use href="#i-android"/></svg>
+          <span class="two"><small><span class="get-tag">Dapatkan di</span><span class="soon-tag">Segera hadir</span></small><span>Google Play</span></span>
+        </a>
+        <a class="btn btn-glass store-btn is-soon" data-store="mac" aria-disabled="true">
+          <svg aria-hidden="true"><use href="#i-laptop"/></svg>
+          <span class="two"><small><span class="get-tag">Unduh gratis</span><span class="soon-tag">Segera hadir</span></small><span>untuk Mac</span></span>
+        </a>
+      </div>
+      <div class="beta" hidden>
+        <a class="text-link" data-store="testflight" hidden>Ikut beta iPhone dan iPad <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+        <a class="text-link" data-store="playTest" hidden>Ikut beta Android <svg width="16" height="16" aria-hidden="true"><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="req">
+        <div><b>iPhone dan iPad</b>iOS atau iPadOS 26 atau lebih baru</div>
+        <div><b>Android</b>Ponsel dan tablet dengan Android 12 atau lebih baru</div>
+        <div><b>Mac</b>macOS 26 atau lebih baru, gratis</div>
+      </div>
+    </div>
+
+    <div class="faq" id="faq">
+      <h2 class="h2 reveal" style="font-size:clamp(34px,4.4vw,60px)">Tanya jawab</h2>
+      <details class="reveal">
+        <summary>Apakah ClipThat Studio gratis?</summary>
+        <div class="a"><p>Ya. Editor, subtitle, sulih suara, rencana, Sutradara AI, filter, dan ekspor kualitas penuh gratis, tanpa watermark. Pro dibeli sekali untuk kru yang lebih besar, gaya subtitle kata per kata, semua 12 jenis video, dan fitur AI Pro. Tanpa langganan. Harganya tertera di toko aplikasimu.</p><p>Sekali beli di App Store berlaku untuk iPhone dan iPad-mu; Google Play dibeli terpisah. Di Mac, semuanya gratis.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>Apakah perlu akun?</summary>
+        <div class="a"><p>Tidak. Tidak perlu daftar. Fitur AI memakai kunci milikmu atau, di Mac, akun Claude milikmu.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>Subtitle mendukung bahasa apa saja?</summary>
+        <div class="a"><p>Subtitle dibuat dari ucapan di perangkatmu dalam Bahasa Indonesia dan Inggris, dan bisa diterjemahkan antara keduanya dengan Bantuan AI.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>Bisakah iPhone dan ponsel Android syuting bareng?</summary>
+        <div class="a"><p>Bisa. iPhone, iPad, dan ponsel Android dengan ClipThat Studio bisa satu kru di jaringan lokal yang sama, dan Mac bisa jadi Sutradara. Sutradara gratis menerima satu kamera; dengan Pro hingga empat.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>Di mana videoku disimpan?</summary>
+        <div class="a"><p>Di perangkatmu, atau di drive eksternal kalau kamu memilihnya. Aplikasi memberi tahu saat drive tidak tersambung atau penuh. Take kru dikirim lewat jaringan lokalmu, dari kamera ke Sutradara.</p></div>
+      </details>
+      <details class="reveal">
+        <summary>Apa yang dikirim fitur AI, dan ke mana?</summary>
+        <div class="a"><p>Hanya teks (brief, rencana, dan subtitle), tidak pernah video atau audio, dan hanya ke layanan yang kamu pilih dan setujui. Tinjau editanku dan Rough cut pintar juga mengirim frame diam kecil, setelah kamu izinkan. Biaya pemakaian layanan AI-mu adalah urusan antara kamu dan penyedianya.</p></div>
+      </details>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="top">
+      <a class="brand" href="#top"><img src="../media/icon-192.png" alt="" width="30" height="30" loading="lazy"><span>ClipThat Studio</span></a>
+      <nav aria-label="Footer">
+        <ul>
+          <li><a href="../support/">Bantuan</a></li>
+          <li><a href="../privacy/">Privasi</a></li>
+          <li><a href="../terms/">Ketentuan</a></li>
+          <li><a href="../../#apps">Semua aplikasi SDMV</a></li>
+          <li><a href="mailto:hello@sdmv.my.id">hello@sdmv.my.id</a></li>
+        </ul>
+      </nav>
+    </div>
+    <div class="legal">
+      <p>© 2026 SDMV. Hak cipta dilindungi.</p>
+      <p>App Store, iPhone, iPad, Mac, Google Play, Android, Claude, Claude Code, Codex, dan Antigravity adalah merek dagang milik pemiliknya masing-masing. ClipThat Studio tidak berafiliasi dengan, didukung, atau disponsori oleh Apple, Google, Anthropic, OpenAI, atau penyedia AI lain.</p>
+    </div>
+  </div>
+</footer>
+
+<dialog class="vdialog" id="mac-trailer" aria-label="Trailer ClipThat Studio untuk Mac">
+  <button class="close" type="button" aria-label="Tutup trailer"><svg aria-hidden="true"><use href="#i-close"/></svg></button>
+  <video controls playsinline preload="none" data-poster="../media/mac-trailer-id-poster.webp" width="1080" height="1920" data-src="../media/mac-trailer-id.mp4"></video>
+</dialog>
+
+<script src="../site.js" defer></script>
+</body>
+</html>

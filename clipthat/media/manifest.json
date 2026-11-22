@@ -1,0 +1,713 @@
+{
+ "total_bytes": 33979775,
+ "files": {
+  "favicon.ico": {
+   "bytes": 5143,
+   "w": 48,
+   "h": 48
+  },
+  "hero-poster.webp": {
+   "bytes": 103410,
+   "w": 720,
+   "h": 1564,
+   "alt": {
+    "en": "A phone showing ClipThat Studio: live captions on a beach road video, the AI Editor trimming a clip, and an AI-drafted shot plan.",
+    "id": "Ponsel yang menampilkan ClipThat Studio: subtitle langsung di video jalan pantai, AI Editor memotong klip, dan rencana shot buatan AI."
+   }
+  },
+  "hero.mp4": {
+   "bytes": 1848887,
+   "w": 720,
+   "h": 1564,
+   "seconds": 12.9,
+   "alt": {
+    "en": "A phone showing ClipThat Studio: live captions on a beach road video, the AI Editor trimming a clip, and an AI-drafted shot plan.",
+    "id": "Ponsel yang menampilkan ClipThat Studio: subtitle langsung di video jalan pantai, AI Editor memotong klip, dan rencana shot buatan AI."
+   }
+  },
+  "hero.webm": {
+   "bytes": 2043256,
+   "w": 720,
+   "h": 1564,
+   "seconds": 12.9,
+   "alt": {
+    "en": "A phone showing ClipThat Studio: live captions on a beach road video, the AI Editor trimming a clip, and an AI-drafted shot plan.",
+    "id": "Ponsel yang menampilkan ClipThat Studio: subtitle langsung di video jalan pantai, AI Editor memotong klip, dan rencana shot buatan AI."
+   }
+  },
+  "icon-180.png": {
+   "bytes": 17854,
+   "w": 180,
+   "h": 180
+  },
+  "icon-192.png": {
+   "bytes": 19553,
+   "w": 192,
+   "h": 192
+  },
+  "icon-32.png": {
+   "bytes": 1660,
+   "w": 32,
+   "h": 32
+  },
+  "icon-512.png": {
+   "bytes": 96703,
+   "w": 512,
+   "h": 512
+  },
+  "mac-trailer-en-poster.webp": {
+   "bytes": 114700,
+   "w": 1080,
+   "h": 1920,
+   "alt": {
+    "en": "ClipThat Studio on the Mac: ask the AI Editor, captions, looks, crew and more.",
+    "id": "ClipThat Studio di Mac: minta AI Editor, subtitle, look, kru, dan lainnya."
+   }
+  },
+  "mac-trailer-en.mp4": {
+   "bytes": 5683519,
+   "w": 1080,
+   "h": 1920,
+   "seconds": 37.7,
+   "alt": {
+    "en": "ClipThat Studio on the Mac: ask the AI Editor, captions, looks, crew and more.",
+    "id": "ClipThat Studio di Mac: minta AI Editor, subtitle, look, kru, dan lainnya."
+   }
+  },
+  "mac-trailer-id-poster.webp": {
+   "bytes": 122984,
+   "w": 1080,
+   "h": 1920,
+   "alt": {
+    "en": "ClipThat Studio on the Mac: ask the AI Editor, captions, looks, crew and more.",
+    "id": "ClipThat Studio di Mac: minta AI Editor, subtitle, look, kru, dan lainnya."
+   }
+  },
+  "mac-trailer-id.mp4": {
+   "bytes": 6669756,
+   "w": 1080,
+   "h": 1920,
+   "seconds": 48.0,
+   "alt": {
+    "en": "ClipThat Studio on the Mac: ask the AI Editor, captions, looks, crew and more.",
+    "id": "ClipThat Studio di Mac: minta AI Editor, subtitle, look, kru, dan lainnya."
+   }
+  },
+  "og-en.jpg": {
+   "bytes": 73862,
+   "w": 1200,
+   "h": 630,
+   "alt": {
+    "en": "ClipThat Studio share card",
+    "id": "Kartu bagikan ClipThat Studio"
+   }
+  },
+  "og-id.jpg": {
+   "bytes": 75953,
+   "w": 1200,
+   "h": 630,
+   "alt": {
+    "en": "ClipThat Studio share card",
+    "id": "Kartu bagikan ClipThat Studio"
+   }
+  },
+  "screens/ai-editor-steps.webp": {
+   "bytes": 68296,
+   "w": 780,
+   "h": 1688,
+   "alt": {
+    "en": "The AI Editor's steps, each with an undo.",
+    "id": "Langkah-langkah AI Editor, masing-masing bisa di-undo."
+   }
+  },
+  "screens/ai-editor-working.webp": {
+   "bytes": 59118,
+   "w": 780,
+   "h": 1688,
+   "alt": {
+    "en": "The AI Editor on the phone working through an edit.",
+    "id": "AI Editor di ponsel sedang mengerjakan suntingan."
+   }
+  },
+  "screens/ai-plan.webp": {
+   "bytes": 62164,
+   "w": 780,
+   "h": 1695,
+   "alt": {
+    "en": "The AI Director's shot plan with close-ups, moves and timings.",
+    "id": "Rencana shot dari AI Director dengan close-up, gerakan, dan durasi."
+   }
+  },
+  "screens/captions.webp": {
+   "bytes": 73916,
+   "w": 780,
+   "h": 1695,
+   "alt": {
+    "en": "Auto captions on a phone, word by word.",
+    "id": "Subtitle otomatis di ponsel, kata demi kata."
+   }
+  },
+  "screens/connect-computer.webp": {
+   "bytes": 80668,
+   "w": 780,
+   "h": 1688,
+   "alt": {
+    "en": "Settings: let a computer edit the open project over Wi-Fi.",
+    "id": "Pengaturan: izinkan komputer mengedit proyek yang terbuka lewat Wi-Fi."
+   }
+  },
+  "screens/crew-camera.webp": {
+   "bytes": 139380,
+   "w": 780,
+   "h": 1695,
+   "alt": {
+    "en": "A phone as crew camera B, recording for the Director.",
+    "id": "Ponsel sebagai kamera kru B, merekam untuk Sutradara."
+   }
+  },
+  "screens/crew-join.webp": {
+   "bytes": 129336,
+   "w": 780,
+   "h": 1695,
+   "alt": {
+    "en": "Joining a crew by scanning the Director's code.",
+    "id": "Bergabung ke kru dengan memindai kode Sutradara."
+   }
+  },
+  "screens/crew.webp": {
+   "bytes": 142216,
+   "w": 780,
+   "h": 1695,
+   "alt": {
+    "en": "The Crew monitor: several phones filming at once, live on the Mac.",
+    "id": "Monitor Kru: beberapa ponsel merekam bersamaan, langsung di Mac."
+   }
+  },
+  "screens/editor.webp": {
+   "bytes": 74804,
+   "w": 780,
+   "h": 1695,
+   "alt": {
+    "en": "The timeline editor with tools for text, captions and voiceover.",
+    "id": "Editor timeline dengan alat teks, subtitle, dan voiceover."
+   }
+  },
+  "screens/external-storage.webp": {
+   "bytes": 59122,
+   "w": 780,
+   "h": 1695,
+   "alt": {
+    "en": "Storage settings with an external SSD as the scratch disk.",
+    "id": "Pengaturan penyimpanan dengan SSD eksternal sebagai disk kerja."
+   }
+  },
+  "screens/ipad-ai-plan.webp": {
+   "bytes": 69034,
+   "w": 1200,
+   "h": 1600,
+   "alt": {
+    "en": "The AI Director's shot plan with close-ups, moves and timings on iPad.",
+    "id": "Rencana shot dari AI Director dengan close-up, gerakan, dan durasi di iPad."
+   }
+  },
+  "screens/ipad-captions.webp": {
+   "bytes": 77258,
+   "w": 1200,
+   "h": 1600,
+   "alt": {
+    "en": "Auto captions on a phone, word by word on iPad.",
+    "id": "Subtitle otomatis di ponsel, kata demi kata di iPad."
+   }
+  },
+  "screens/ipad-crew-camera.webp": {
+   "bytes": 202084,
+   "w": 1200,
+   "h": 1600,
+   "alt": {
+    "en": "A phone as crew camera B, recording for the Director on iPad.",
+    "id": "Ponsel sebagai kamera kru B, merekam untuk Sutradara di iPad."
+   }
+  },
+  "screens/ipad-crew-join.webp": {
+   "bytes": 99510,
+   "w": 1200,
+   "h": 1600,
+   "alt": {
+    "en": "Joining a crew by scanning the Director's code on iPad.",
+    "id": "Bergabung ke kru dengan memindai kode Sutradara di iPad."
+   }
+  },
+  "screens/ipad-crew.webp": {
+   "bytes": 159894,
+   "w": 1200,
+   "h": 1600,
+   "alt": {
+    "en": "The Crew monitor: several phones filming at once, live on the Mac on iPad.",
+    "id": "Monitor Kru: beberapa ponsel merekam bersamaan, langsung di Mac di iPad."
+   }
+  },
+  "screens/ipad-editor.webp": {
+   "bytes": 88442,
+   "w": 1200,
+   "h": 1600,
+   "alt": {
+    "en": "The timeline editor with tools for text, captions and voiceover on iPad.",
+    "id": "Editor timeline dengan alat teks, subtitle, dan voiceover di iPad."
+   }
+  },
+  "screens/ipad-external-storage.webp": {
+   "bytes": 75974,
+   "w": 1200,
+   "h": 1600,
+   "alt": {
+    "en": "Storage settings with an external SSD as the scratch disk on iPad.",
+    "id": "Pengaturan penyimpanan dengan SSD eksternal sebagai disk kerja di iPad."
+   }
+  },
+  "screens/ipad-plan-play.webp": {
+   "bytes": 138032,
+   "w": 1200,
+   "h": 1600,
+   "alt": {
+    "en": "Playing a plan shot by shot on iPad.",
+    "id": "Memutar rencana shot demi shot di iPad."
+   }
+  },
+  "screens/ipad-plans-board.webp": {
+   "bytes": 113058,
+   "w": 1200,
+   "h": 1600,
+   "alt": {
+    "en": "A plan as a board of shot cards on iPad.",
+    "id": "Rencana dalam bentuk papan kartu shot di iPad."
+   }
+  },
+  "screens/ipad-send-plan.webp": {
+   "bytes": 64788,
+   "w": 1200,
+   "h": 1600,
+   "alt": {
+    "en": "Sending a plan to a nearby device on iPad.",
+    "id": "Mengirim rencana ke perangkat terdekat di iPad."
+   }
+  },
+  "screens/ipad-shot-voiceover.webp": {
+   "bytes": 68892,
+   "w": 1200,
+   "h": 1600,
+   "alt": {
+    "en": "A shot card with its voiceover line and notes on iPad.",
+    "id": "Kartu shot dengan naskah voiceover dan catatan di iPad."
+   }
+  },
+  "screens/ipad-sketch.webp": {
+   "bytes": 42428,
+   "w": 1200,
+   "h": 1600,
+   "alt": {
+    "en": "Sketching a shot with drawing tools on iPad.",
+    "id": "Menggambar sketsa shot dengan alat gambar di iPad."
+   }
+  },
+  "screens/mac-ai-chat.webp": {
+   "bytes": 134078,
+   "w": 1800,
+   "h": 1125,
+   "alt": {
+    "en": "The AI Editor on the Mac with its quick suggestions.",
+    "id": "AI Editor di Mac dengan saran cepat."
+   }
+  },
+  "screens/mac-ai-working.webp": {
+   "bytes": 133024,
+   "w": 1800,
+   "h": 1125,
+   "alt": {
+    "en": "The AI Editor on the Mac editing the timeline step by step.",
+    "id": "AI Editor di Mac menyunting timeline langkah demi langkah."
+   }
+  },
+  "screens/mac-captions.webp": {
+   "bytes": 124036,
+   "w": 1800,
+   "h": 1125,
+   "alt": {
+    "en": "The Mac editor with the captions list.",
+    "id": "Editor Mac dengan daftar subtitle."
+   }
+  },
+  "screens/mac-home.webp": {
+   "bytes": 221688,
+   "w": 1800,
+   "h": 1125,
+   "alt": {
+    "en": "The Mac app's Projects screen.",
+    "id": "Layar Proyek di aplikasi Mac."
+   }
+  },
+  "screens/mac-looks.webp": {
+   "bytes": 136038,
+   "w": 1800,
+   "h": 1125,
+   "alt": {
+    "en": "The Mac editor's colour looks grid.",
+    "id": "Kisi look warna di editor Mac."
+   }
+  },
+  "screens/mac-text-animate.webp": {
+   "bytes": 118788,
+   "w": 1800,
+   "h": 1125,
+   "alt": {
+    "en": "The Mac editor's text animation picker.",
+    "id": "Pilihan animasi teks di editor Mac."
+   }
+  },
+  "screens/plan-pictures.webp": {
+   "bytes": 36294,
+   "w": 780,
+   "h": 1688,
+   "alt": {
+    "en": "Making AI pictures for empty shots in a plan.",
+    "id": "Membuat gambar AI untuk shot kosong dalam rencana."
+   }
+  },
+  "screens/plan-play.webp": {
+   "bytes": 117006,
+   "w": 780,
+   "h": 1695,
+   "alt": {
+    "en": "Playing a plan shot by shot.",
+    "id": "Memutar rencana shot demi shot."
+   }
+  },
+  "screens/plans-board.webp": {
+   "bytes": 97246,
+   "w": 780,
+   "h": 1695,
+   "alt": {
+    "en": "A plan as a board of shot cards.",
+    "id": "Rencana dalam bentuk papan kartu shot."
+   }
+  },
+  "screens/send-plan.webp": {
+   "bytes": 22204,
+   "w": 780,
+   "h": 1695,
+   "alt": {
+    "en": "Sending a plan to a nearby device.",
+    "id": "Mengirim rencana ke perangkat terdekat."
+   }
+  },
+  "screens/shot-voiceover.webp": {
+   "bytes": 38522,
+   "w": 780,
+   "h": 1695,
+   "alt": {
+    "en": "A shot card with its voiceover line and notes.",
+    "id": "Kartu shot dengan naskah voiceover dan catatan."
+   }
+  },
+  "screens/sketch.webp": {
+   "bytes": 39918,
+   "w": 780,
+   "h": 1695,
+   "alt": {
+    "en": "Sketching a shot with drawing tools.",
+    "id": "Menggambar sketsa shot dengan alat gambar."
+   }
+  },
+  "stills/beach-cafe.webp": {
+   "bytes": 230596,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): beach cafe",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): beach cafe"
+   }
+  },
+  "stills/beach-vlog.webp": {
+   "bytes": 78994,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): beach vlog",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): beach vlog"
+   }
+  },
+  "stills/beach-waves.webp": {
+   "bytes": 184190,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): beach waves",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): beach waves"
+   }
+  },
+  "stills/cafe-drink.webp": {
+   "bytes": 144602,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): cafe drink",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): cafe drink"
+   }
+  },
+  "stills/coast-road.webp": {
+   "bytes": 140116,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): coast road",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): coast road"
+   }
+  },
+  "stills/crew-beach-team.webp": {
+   "bytes": 89456,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): crew beach team",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): crew beach team"
+   }
+  },
+  "stills/crew-cafe.webp": {
+   "bytes": 80338,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): crew cafe",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): crew cafe"
+   }
+  },
+  "stills/crew-kitchen-wide.webp": {
+   "bytes": 102748,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): crew kitchen wide",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): crew kitchen wide"
+   }
+  },
+  "stills/crew-phone-closeup.webp": {
+   "bytes": 59640,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): crew phone closeup",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): crew phone closeup"
+   }
+  },
+  "stills/crew-rooftop.webp": {
+   "bytes": 65606,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): crew rooftop",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): crew rooftop"
+   }
+  },
+  "stills/crew-street-dance.webp": {
+   "bytes": 142502,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): crew street dance",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): crew street dance"
+   }
+  },
+  "stills/director-tablet.webp": {
+   "bytes": 65378,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): director tablet",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): director tablet"
+   }
+  },
+  "stills/friends-filming.webp": {
+   "bytes": 88858,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): friends filming",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): friends filming"
+   }
+  },
+  "stills/hands-roll.webp": {
+   "bytes": 58594,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): hands roll",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): hands roll"
+   }
+  },
+  "stills/idea-night.webp": {
+   "bytes": 46156,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): idea night",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): idea night"
+   }
+  },
+  "stills/kitchen-garlic.webp": {
+   "bytes": 123170,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): kitchen garlic",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): kitchen garlic"
+   }
+  },
+  "stills/kitchen-ingredients.webp": {
+   "bytes": 194204,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): kitchen ingredients",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): kitchen ingredients"
+   }
+  },
+  "stills/kitchen-toss.webp": {
+   "bytes": 108018,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): kitchen toss",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): kitchen toss"
+   }
+  },
+  "stills/lighthouse.webp": {
+   "bytes": 175708,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): lighthouse",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): lighthouse"
+   }
+  },
+  "stills/mac-cafe.webp": {
+   "bytes": 84088,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): mac cafe",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): mac cafe"
+   }
+  },
+  "stills/mac-desk-night.webp": {
+   "bytes": 52780,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): mac desk night",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): mac desk night"
+   }
+  },
+  "stills/mac-kitchen.webp": {
+   "bytes": 81940,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): mac kitchen",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): mac kitchen"
+   }
+  },
+  "stills/mac-sofa.webp": {
+   "bytes": 57940,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): mac sofa",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): mac sofa"
+   }
+  },
+  "stills/plan-notebook.webp": {
+   "bytes": 114262,
+   "w": 900,
+   "h": 1600,
+   "alt": {
+    "en": "Mood photo, AI-generated illustration (not a real person or customer): plan notebook",
+    "id": "Foto suasana buatan AI (bukan orang atau pelanggan sungguhan): plan notebook"
+   }
+  },
+  "trailer-en-poster.webp": {
+   "bytes": 142536,
+   "w": 1080,
+   "h": 1920,
+   "alt": {
+    "en": "ClipThat Studio trailer: an AI editor that edits with you, on your Mac and your phone.",
+    "id": "Trailer ClipThat Studio: editor AI yang mengedit bersamamu, di Mac dan ponselmu."
+   }
+  },
+  "trailer-en.mp4": {
+   "bytes": 5172129,
+   "w": 1080,
+   "h": 1920,
+   "seconds": 38.5,
+   "alt": {
+    "en": "ClipThat Studio trailer: an AI editor that edits with you, on your Mac and your phone.",
+    "id": "Trailer ClipThat Studio: editor AI yang mengedit bersamamu, di Mac dan ponselmu."
+   }
+  },
+  "trailer-id-poster.webp": {
+   "bytes": 148640,
+   "w": 1080,
+   "h": 1920,
+   "alt": {
+    "en": "ClipThat Studio trailer: an AI editor that edits with you, on your Mac and your phone.",
+    "id": "Trailer ClipThat Studio: editor AI yang mengedit bersamamu, di Mac dan ponselmu."
+   }
+  },
+  "trailer-id.mp4": {
+   "bytes": 5651277,
+   "w": 1080,
+   "h": 1920,
+   "seconds": 44.6,
+   "alt": {
+    "en": "ClipThat Studio trailer: an AI editor that edits with you, on your Mac and your phone.",
+    "id": "Trailer ClipThat Studio: editor AI yang mengedit bersamamu, di Mac dan ponselmu."
+   }
+  },
+  "stills/hero-glass.webp": {
+   "bytes": 21794,
+   "w": 1600,
+   "h": 900,
+   "alt": {
+    "en": "Soft light moving across dark glass.",
+    "id": "Cahaya lembut bergerak di atas kaca gelap."
+   }
+  },
+  "stills/wide-crew-rooftop.webp": {
+   "bytes": 46462,
+   "w": 1600,
+   "h": 900,
+   "alt": {
+    "en": "Four phones on tripods film a dancer on a rooftop at blue hour (AI-generated mood image).",
+    "id": "Empat ponsel di tripod merekam penari di atap saat senja (gambar suasana buatan AI)."
+   }
+  },
+  "stills/night-desk.webp": {
+   "bytes": 20684,
+   "w": 1600,
+   "h": 900,
+   "alt": {
+    "en": "A laptop and a phone on a desk under a lamp at night (AI-generated mood image).",
+    "id": "Laptop dan ponsel di meja di bawah lampu pada malam hari (gambar suasana buatan AI)."
+   }
+  }
+ },
+ "missing": {
+  "screens/mac-crew.webp": "The Mac Crew capture shows a join QR code and this Mac's address, so it is left out (use loops/crew.mp4).",
+  "screens/mac-editor.webp": "Covered by mac-captions, mac-looks and mac-text-animate (the same editor)."
+ },
+ "notes": {
+  "hero": "Cut from the Mac trailer EN 26.3-27.9 s (captions), the AI trailer EN 25.5-28.0 s (AI Editor on the phone) and 13.6-17.4 s (AI plan and pictures), cropped to the phone UI so no burnt-in headline shows, played 1.2x slower, 0.4 s crossfades and a 0.5 s crossfade at the loop point.",
+  "trailer-en/id": "Voice-led AI trailer: ClipThat-Studio-AI-49s-1080p-en / AI-57s-1080p-id, re-encoded (CRF 24, max 2 Mbps).",
+  "mac-trailer-en/id": "ClipThat-Studio-Mac-53s-1080p-en / Mac-64s-1080p-id, re-encoded the same way.",
+  "mac screens": "The Mac snapshot draws the video view black; it is filled with an export frame of the same project only where black (as the trailer does).",
+  "stills": "AI-generated mood photos; never present them as real people or customers."
+ }
+}
