@@ -2,7 +2,7 @@
 
 /* Store links: the lead fills these in. An empty URL shows the button as "Coming soon". */
 const STORES = {
-  appStore: "",   // App Store (iPhone and iPad)
+  appStore: "https://apps.apple.com/app/id6832819237",   // App Store (iPhone and iPad), live 22 Nov
   googlePlay: "", // Google Play (Android)
   mac: "",        // Mac download
   testflight: "", // TestFlight public link (optional; hidden when empty)
@@ -38,7 +38,7 @@ const STORES = {
       el.classList.add("is-soon");
       el.setAttribute("aria-disabled", "true");
       el.removeAttribute("href");
-      const name = el.querySelector(".two > span:last-child");
+      const name = el.querySelector(".lbl .name");
       el.setAttribute("aria-label", soonLabel + ": " + (name ? name.textContent : ""));
     }
   });
